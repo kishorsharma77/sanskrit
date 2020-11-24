@@ -5,7 +5,11 @@
     <link>https://vvasuki.github.io/sanskrit/varNa-vyatyayaH/</link>
     <description>Recent content in &#43;वर्णव्यत्ययः on संस्कृते विश्वासटिप्पणयः</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://vvasuki.github.io/sanskrit/varNa-vyatyayaH/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    
+	<atom:link href="https://vvasuki.github.io/sanskrit/varNa-vyatyayaH/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>यरो द्वे वा</title>
       <link>https://vvasuki.github.io/sanskrit/varNa-vyatyayaH/yaro_dve/</link>

@@ -5,7 +5,11 @@
     <link>https://vvasuki.github.io/sanskrit/vyAkaraNam/samAsaH/</link>
     <description>Recent content in &#43;समासः on संस्कृते विश्वासटिप्पणयः</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://vvasuki.github.io/sanskrit/vyAkaraNam/samAsaH/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    
+	<atom:link href="https://vvasuki.github.io/sanskrit/vyAkaraNam/samAsaH/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>अव्ययीभावः</title>
       <link>https://vvasuki.github.io/sanskrit/vyAkaraNam/samAsaH/avyayIbhAvaH/</link>
