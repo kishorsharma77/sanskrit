@@ -2,6 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://vishvAsa.github.io/sanskrit/meta/articles/</loc>
+    <lastmod>2021-07-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://vishvAsa.github.io/sanskrit/meta/</loc>
+    <lastmod>2021-07-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://vishvAsa.github.io/sanskrit/meta/articles/chamu-kRShNashAstrI/</loc>
+    <lastmod>2021-07-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://vishvAsa.github.io/sanskrit/</loc>
+    <lastmod>2021-07-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://vishvAsa.github.io/sanskrit/meta/articles/chamu-kRShNashAstrI/2021-07-12_Translation_for_Anot/</loc>
+    <lastmod>2021-07-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://vishvAsa.github.io/sanskrit/shixaa/MT_lekhAH/</loc>
+    <lastmod>2005-12-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://vishvAsa.github.io/sanskrit/shixaa/</loc>
+    <lastmod>2005-12-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://vishvAsa.github.io/sanskrit/shixaa/MT_lekhAH/2005-12-26_on-the-vedic-anusvara/</loc>
+    <lastmod>2005-12-26T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/kRShNaH/upashixA/uccodarki/</loc>
   </url><url>
     <loc>https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/kRShNaH/upashixA/jatavalli/</loc>
@@ -10,19 +34,25 @@
   </url><url>
     <loc>https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/kRShNaH/upashixA/svara_panchashat/</loc>
   </url><url>
-    <loc>https://vishvAsa.github.io/sanskrit/meta/articles/</loc>
+    <loc>https://vishvAsa.github.io/sanskrit/meta/articles/hastings-adi/</loc>
+  </url><url>
+    <loc>https://vishvAsa.github.io/sanskrit/vyAkaraNam/accounting_for_variants/</loc>
   </url><url>
     <loc>https://vishvAsa.github.io/sanskrit/lekhanam/manuscript/</loc>
   </url><url>
-    <loc>https://vishvAsa.github.io/sanskrit/vyAkaraNam/phonetic_shifts/</loc>
+    <loc>https://vishvAsa.github.io/sanskrit/meta/misconceptions/</loc>
+  </url><url>
+    <loc>https://vishvAsa.github.io/sanskrit/registers/</loc>
+  </url><url>
+    <loc>https://vishvAsa.github.io/sanskrit/meta/misconceptions/Sanskrit_Phobia/</loc>
   </url><url>
     <loc>https://vishvAsa.github.io/sanskrit/vyAkaraNam/whitney/</loc>
+  </url><url>
+    <loc>https://vishvAsa.github.io/sanskrit/meta/articles/aklUjkaraH/</loc>
   </url><url>
     <loc>https://vishvAsa.github.io/sanskrit/vyAkaraNam/dhAtu-prakriyA/angAni/</loc>
   </url><url>
     <loc>https://vishvAsa.github.io/sanskrit/shixaa/granthAH/atharva-vedaH/</loc>
-  </url><url>
-    <loc>https://vishvAsa.github.io/sanskrit/meta/</loc>
   </url><url>
     <loc>https://vishvAsa.github.io/sanskrit/shixaa/granthAH/Adhunika-lekhAH/</loc>
   </url><url>
@@ -46,7 +76,15 @@
   </url><url>
     <loc>https://vishvAsa.github.io/sanskrit/shixaa/granthAH/</loc>
   </url><url>
+    <loc>https://vishvAsa.github.io/sanskrit/registers/images/</loc>
+  </url><url>
+    <loc>https://vishvAsa.github.io/sanskrit/shabda-jJNAnam/images/</loc>
+  </url><url>
+    <loc>https://vishvAsa.github.io/sanskrit/shixaa/images/</loc>
+  </url><url>
     <loc>https://vishvAsa.github.io/sanskrit/vyAkaraNam/taddhitam/</loc>
+  </url><url>
+    <loc>https://vishvAsa.github.io/sanskrit/shixaa/granthAH/Adhunika-lekhAH/deshapANDe-mAdhavaH/</loc>
   </url><url>
     <loc>https://vishvAsa.github.io/sanskrit/vyAkaraNam/dhAtu-prakriyA/</loc>
   </url><url>
@@ -56,13 +94,7 @@
   </url><url>
     <loc>https://vishvAsa.github.io/sanskrit/vyAkaraNam/samAsaH/prakriyA/</loc>
   </url><url>
-    <loc>https://vishvAsa.github.io/sanskrit/prAkRtam/</loc>
-  </url><url>
     <loc>https://vishvAsa.github.io/sanskrit/vyAkaraNam/mahAbhAShyam/</loc>
-  </url><url>
-    <loc>https://vishvAsa.github.io/sanskrit/prAkRtam/MT_lekhAH/</loc>
-  </url><url>
-    <loc>https://vishvAsa.github.io/sanskrit/shixaa/MT_lekhAH/</loc>
   </url><url>
     <loc>https://vishvAsa.github.io/sanskrit/vyAkaraNam/dhAtu-prakriyA/la/</loc>
   </url><url>
@@ -82,19 +114,15 @@
   </url><url>
     <loc>https://vishvAsa.github.io/sanskrit/vyAkaraNam/shixaNam/</loc>
   </url><url>
-    <loc>https://vishvAsa.github.io/sanskrit/shixaa/</loc>
-  </url><url>
     <loc>https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/shuklaH/</loc>
   </url><url>
     <loc>https://vishvAsa.github.io/sanskrit/vyAkaraNam/saMjJNA/</loc>
-  </url><url>
-    <loc>https://vishvAsa.github.io/sanskrit/</loc>
   </url><url>
     <loc>https://vishvAsa.github.io/sanskrit/vyAkaraNam/sandhiH/</loc>
   </url><url>
     <loc>https://vishvAsa.github.io/sanskrit/vyAkaraNam/samAsaH/</loc>
   </url><url>
-    <loc>https://vishvAsa.github.io/sanskrit/simple_standard/</loc>
+    <loc>https://vishvAsa.github.io/sanskrit/registers/simple_standard/</loc>
   </url><url>
     <loc>https://vishvAsa.github.io/sanskrit/shixaa/granthAH/sAdhAraNI/</loc>
   </url><url>
@@ -112,13 +140,13 @@
   </url><url>
     <loc>https://vishvAsa.github.io/sanskrit/vyAkaraNam/shabdabodhaH/01-vAkya-bodhaH/</loc>
   </url><url>
-    <loc>https://vishvAsa.github.io/sanskrit/simple_standard/2_saralasaMskRtasya_svarUpam/</loc>
+    <loc>https://vishvAsa.github.io/sanskrit/registers/simple_standard/2_saralasaMskRtasya_svarUpam/</loc>
   </url><url>
-    <loc>https://vishvAsa.github.io/sanskrit/simple_standard/2_saralasaMskRtasya_svarUpam/2_3_saralamAnakasaMskRtasya_sAmAnyaniyamAH/</loc>
+    <loc>https://vishvAsa.github.io/sanskrit/registers/simple_standard/2_saralasaMskRtasya_svarUpam/2_3_saralamAnakasaMskRtasya_sAmAnyaniyamAH/</loc>
   </url><url>
-    <loc>https://vishvAsa.github.io/sanskrit/simple_standard/2_saralasaMskRtasya_svarUpam/2_4_saMjnApadeShu_vibhaktiyojanam/</loc>
+    <loc>https://vishvAsa.github.io/sanskrit/registers/simple_standard/2_saralasaMskRtasya_svarUpam/2_4_saMjnApadeShu_vibhaktiyojanam/</loc>
   </url><url>
-    <loc>https://vishvAsa.github.io/sanskrit/simple_standard/3_saralamAnakasaMskRtasya_kriyAnvayanam/</loc>
+    <loc>https://vishvAsa.github.io/sanskrit/registers/simple_standard/3_saralamAnakasaMskRtasya_kriyAnvayanam/</loc>
   </url><url>
     <loc>https://vishvAsa.github.io/sanskrit/vyAkaraNam/whitney/01_Sanskrit_Grammar_Whitney/</loc>
   </url><url>
@@ -162,6 +190,8 @@
   </url><url>
     <loc>https://vishvAsa.github.io/sanskrit/vyAkaraNam/whitney/21_Chapter_XVII_DERIVATION_OF_DECLINABLE_STEMS/</loc>
   </url><url>
+    <loc>https://vishvAsa.github.io/sanskrit/meta/articles/shashikiraNa_21stce-approach/</loc>
+  </url><url>
     <loc>https://vishvAsa.github.io/sanskrit/vyAkaraNam/whitney/22_Chapter_XVIII_FORMATION_OF_COMPOUND_STEMS/</loc>
   </url><url>
     <loc>https://vishvAsa.github.io/sanskrit/vyAkaraNam/whitney/23_Appendix/</loc>
@@ -172,35 +202,59 @@
   </url><url>
     <loc>https://vishvAsa.github.io/sanskrit/vyAkaraNam/whitney/26_Errata/</loc>
   </url><url>
+    <loc>https://vishvAsa.github.io/sanskrit/meta/misconceptions/Anti-sanskrit_campaigners/</loc>
+  </url><url>
+    <loc>https://vishvAsa.github.io/sanskrit/registers/buddhist-hybrid/</loc>
+  </url><url>
+    <loc>https://vishvAsa.github.io/sanskrit/meta/misconceptions/Sanskrit_Phobia/Caste_system/</loc>
+  </url><url>
     <loc>https://vishvAsa.github.io/sanskrit/categories/</loc>
+  </url><url>
+    <loc>https://vishvAsa.github.io/sanskrit/meta/misconceptions/Sanskrit_Phobia/Dead_language/</loc>
+  </url><url>
+    <loc>https://vishvAsa.github.io/sanskrit/meta/articles/aklUjkaraH/Different_sociolinguistics/</loc>
   </url><url>
     <loc>https://vishvAsa.github.io/sanskrit/meta/groups/</loc>
   </url><url>
-    <loc>https://vishvAsa.github.io/sanskrit/vyAkaraNam/phonetic_shifts/h_before_vowel/</loc>
+    <loc>https://vishvAsa.github.io/sanskrit/vyAkaraNam/accounting_for_variants/h_before_vowel/</loc>
   </url><url>
-    <loc>https://vishvAsa.github.io/sanskrit/prAkRtam/history/</loc>
+    <loc>https://vishvAsa.github.io/sanskrit/meta/misconceptions/Sanskrit_Phobia/Hard_language/</loc>
+  </url><url>
+    <loc>https://vishvAsa.github.io/sanskrit/meta/misconceptions/Sanskrit_Phobia/Impractical_to_switch/</loc>
+  </url><url>
+    <loc>https://vishvAsa.github.io/sanskrit/meta/misconceptions/Sanskrit_Phobia/indologist-rants/</loc>
   </url><url>
     <loc>https://vishvAsa.github.io/sanskrit/shixaa/labial/</loc>
   </url><url>
     <loc>https://vishvAsa.github.io/sanskrit/meta/learning/</loc>
   </url><url>
-    <loc>https://vishvAsa.github.io/sanskrit/prAkRtam/MT_lekhAH/2006-07-16_maharatti-and-kannada-and-more-musing-on-indo-aryan/</loc>
+    <loc>https://vishvAsa.github.io/sanskrit/meta/articles/hastings-adi/licked-by-mother-tongue/</loc>
   </url><url>
     <loc>https://vishvAsa.github.io/sanskrit/meta/misc-faq/</loc>
   </url><url>
-    <loc>https://vishvAsa.github.io/sanskrit/meta/misconceptions/</loc>
+    <loc>https://vishvAsa.github.io/sanskrit/meta/misconceptions/Sanskrit_Phobia/Modern_tech_terms/</loc>
   </url><url>
-    <loc>https://vishvAsa.github.io/sanskrit/shixaa/MT_lekhAH/2005-12-26_on-the-vedic-anusvara/</loc>
+    <loc>https://vishvAsa.github.io/sanskrit/meta/misconceptions/Sanskrit_Phobia/Money/</loc>
+  </url><url>
+    <loc>https://vishvAsa.github.io/sanskrit/meta/articles/munshi_1951_speech/</loc>
   </url><url>
     <loc>https://vishvAsa.github.io/sanskrit/lekhanam/manuscript/pANDurangI-article/</loc>
   </url><url>
-    <loc>https://vishvAsa.github.io/sanskrit/shixaa/granthAH/Adhunika-lekhAH/phonetics_of_v_M_deshpANDe/</loc>
+    <loc>https://vishvAsa.github.io/sanskrit/shixaa/granthAH/Adhunika-lekhAH/deshapANDe-mAdhavaH/phonetics_of_v_M_deshpANDe/</loc>
   </url><url>
-    <loc>https://vishvAsa.github.io/sanskrit/meta/articles/aklUjkar_dominance/</loc>
+    <loc>https://vishvAsa.github.io/sanskrit/meta/misconceptions/Sanskrit_Phobia/Restricted_social_role/</loc>
+  </url><url>
+    <loc>https://vishvAsa.github.io/sanskrit/meta/articles/seneviratne_lanka-sanskrit/</loc>
+  </url><url>
+    <loc>https://vishvAsa.github.io/sanskrit/meta/articles/aklUjkaraH/aklUjkar_dominance/</loc>
+  </url><url>
+    <loc>https://vishvAsa.github.io/sanskrit/meta/misconceptions/Sanskrit_Phobia/Sanskrit_suppresses_other_Indian_languages/</loc>
+  </url><url>
+    <loc>https://vishvAsa.github.io/sanskrit/meta/misconceptions/Superficially_pro-Sanskrit_falsehood/</loc>
   </url><url>
     <loc>https://vishvAsa.github.io/sanskrit/tags/</loc>
   </url><url>
-    <loc>https://vishvAsa.github.io/sanskrit/prAkRtam/MT_lekhAH/2006-07-16_the-substrate-in-old-indo-aryan/</loc>
+    <loc>https://vishvAsa.github.io/sanskrit/registers/tAntrika-register/</loc>
   </url><url>
     <loc>https://vishvAsa.github.io/sanskrit/shabda-jJNAnam/vocabularyBuilder/</loc>
   </url><url>
@@ -212,11 +266,11 @@
   </url><url>
     <loc>https://vishvAsa.github.io/sanskrit/shixaa/granthAH/atharva-vedaH/manduki_shiksha/</loc>
   </url><url>
-    <loc>https://vishvAsa.github.io/sanskrit/simple_standard/anukramaNikA/</loc>
+    <loc>https://vishvAsa.github.io/sanskrit/registers/simple_standard/anukramaNikA/</loc>
   </url><url>
     <loc>https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/kRShNaH/upashixA/Antanirdesha/</loc>
   </url><url>
-    <loc>https://vishvAsa.github.io/sanskrit/vyAkaraNam/samAsaH/prakriyA/antya-pratyayAH/</loc>
+    <loc>https://vishvAsa.github.io/sanskrit/vyAkaraNam/samAsaH/prakriyA/antya-pratyayaH/</loc>
   </url><url>
     <loc>https://vishvAsa.github.io/sanskrit/vyAkaraNam/shabdabodhaH/01-vAkya-bodhaH/anvaya-kramaH/</loc>
   </url><url>
@@ -368,7 +422,7 @@
   </url><url>
     <loc>https://vishvAsa.github.io/sanskrit/vyAkaraNam/paribhAShA/</loc>
   </url><url>
-    <loc>https://vishvAsa.github.io/sanskrit/shixaa/granthAH/sAdhAraNI/paniniya_shiksha/</loc>
+    <loc>https://vishvAsa.github.io/sanskrit/shixaa/granthAH/sAdhAraNI/pANinIya-shixA/</loc>
   </url><url>
     <loc>https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/shuklaH/parashara_shiksha/</loc>
   </url><url>
@@ -449,6 +503,8 @@
     <loc>https://vishvAsa.github.io/sanskrit/shixaa/granthAH/sAdhAraNI/yohiprati_shishA/</loc>
   </url><url>
     <loc>https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/kRShNaH/yohiprati_shishA/</loc>
+  </url><url>
+    <loc>https://vishvAsa.github.io/sanskrit/meta/ranganAtha-lekhA-manjUShA/</loc>
   </url><url>
     <loc>https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/kRShNaH/upashixA/Ravanabaith/</loc>
   </url><url>
@@ -576,6 +632,8 @@
   </url><url>
     <loc>https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/shuklaH/shodashashloki_shiksha/</loc>
   </url><url>
+    <loc>https://vishvAsa.github.io/sanskrit/meta/articles/chamu-kRShNashAstrI/saMskRtIkaraNam/</loc>
+  </url><url>
     <loc>https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/kRShNaH/sarvasammata_shiksha/</loc>
   </url><url>
     <loc>https://vishvAsa.github.io/sanskrit/shixaa/granthAH/sAma-vedaH/upashixA/samalakshanadipika/</loc>
@@ -595,6 +653,8 @@
     <loc>https://vishvAsa.github.io/sanskrit/vyAkaraNam/prAtipadika-prakriyA/sup/siddha-pratyayAH/</loc>
   </url><url>
     <loc>https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/kRShNaH/siddhanta_shiksha/</loc>
+  </url><url>
+    <loc>https://vishvAsa.github.io/sanskrit/vyAkaraNam/sandhiH/suT/</loc>
   </url><url>
     <loc>https://vishvAsa.github.io/sanskrit/vyAkaraNam/prAtipadika-prakriyA/sup/subantam/</loc>
   </url><url>
@@ -638,6 +698,8 @@
   </url><url>
     <loc>https://vishvAsa.github.io/sanskrit/vyAkaraNam/mahAbhAShyam/01_paspashAhnikam/01_shabda-svarUpa-nirNyaH/</loc>
   </url><url>
+    <loc>https://vishvAsa.github.io/sanskrit/vyAkaraNam/mahAbhAShyam/02_pratyAhArAhnikam/</loc>
+  </url><url>
     <loc>https://vishvAsa.github.io/sanskrit/vyAkaraNam/mahAbhAShyam/01_paspashAhnikam/02_shabda-shAstra-prayojanam/</loc>
   </url><url>
     <loc>https://vishvAsa.github.io/sanskrit/vyAkaraNam/mahAbhAShyam/01_paspashAhnikam/03_nirmANa-rItiH/</loc>
@@ -654,7 +716,7 @@
   </url><url>
     <loc>https://vishvAsa.github.io/sanskrit/vyAkaraNam/mahAbhAShyam/01_paspashAhnikam/09_shabda-viSayaH/</loc>
   </url><url>
-    <loc>https://vishvAsa.github.io/sanskrit/simple_standard/1_kimarthaM_saralaM_mAnakaM_cha_saMskRtam/</loc>
+    <loc>https://vishvAsa.github.io/sanskrit/registers/simple_standard/1_kimarthaM_saralaM_mAnakaM_cha_saMskRtam/</loc>
   </url><url>
     <loc>https://vishvAsa.github.io/sanskrit/vyAkaraNam/mahAbhAShyam/01_paspashAhnikam/10_shabdajJNAna-dharmajanakatA/</loc>
   </url><url>
@@ -662,28 +724,28 @@
   </url><url>
     <loc>https://vishvAsa.github.io/sanskrit/vyAkaraNam/mahAbhAShyam/01_paspashAhnikam/12_varNopadeshaH/</loc>
   </url><url>
-    <loc>https://vishvAsa.github.io/sanskrit/simple_standard/2_saralasaMskRtasya_svarUpam/2_1_prastAvanA/</loc>
+    <loc>https://vishvAsa.github.io/sanskrit/registers/simple_standard/2_saralasaMskRtasya_svarUpam/2_1_prastAvanA/</loc>
   </url><url>
-    <loc>https://vishvAsa.github.io/sanskrit/simple_standard/2_saralasaMskRtasya_svarUpam/2_2_saralatAnirNAyakaH_mAnadaNDaH/</loc>
+    <loc>https://vishvAsa.github.io/sanskrit/registers/simple_standard/2_saralasaMskRtasya_svarUpam/2_2_saralatAnirNAyakaH_mAnadaNDaH/</loc>
   </url><url>
-    <loc>https://vishvAsa.github.io/sanskrit/simple_standard/2_saralasaMskRtasya_svarUpam/2_3_saralamAnakasaMskRtasya_sAmAnyaniyamAH/2_3_1_paramaprAthamikaH_staraH/</loc>
+    <loc>https://vishvAsa.github.io/sanskrit/registers/simple_standard/2_saralasaMskRtasya_svarUpam/2_3_saralamAnakasaMskRtasya_sAmAnyaniyamAH/2_3_1_paramaprAthamikaH_staraH/</loc>
   </url><url>
-    <loc>https://vishvAsa.github.io/sanskrit/simple_standard/2_saralasaMskRtasya_svarUpam/2_3_saralamAnakasaMskRtasya_sAmAnyaniyamAH/2_3_2_alpapragatastaraH/</loc>
+    <loc>https://vishvAsa.github.io/sanskrit/registers/simple_standard/2_saralasaMskRtasya_svarUpam/2_3_saralamAnakasaMskRtasya_sAmAnyaniyamAH/2_3_2_alpapragatastaraH/</loc>
   </url><url>
-    <loc>https://vishvAsa.github.io/sanskrit/simple_standard/2_saralasaMskRtasya_svarUpam/2_3_saralamAnakasaMskRtasya_sAmAnyaniyamAH/2_3_3_pragatastaraH/</loc>
+    <loc>https://vishvAsa.github.io/sanskrit/registers/simple_standard/2_saralasaMskRtasya_svarUpam/2_3_saralamAnakasaMskRtasya_sAmAnyaniyamAH/2_3_3_pragatastaraH/</loc>
   </url><url>
-    <loc>https://vishvAsa.github.io/sanskrit/simple_standard/2_saralasaMskRtasya_svarUpam/2_3_saralamAnakasaMskRtasya_sAmAnyaniyamAH/2_3_4_prakIrNam/</loc>
+    <loc>https://vishvAsa.github.io/sanskrit/registers/simple_standard/2_saralasaMskRtasya_svarUpam/2_3_saralamAnakasaMskRtasya_sAmAnyaniyamAH/2_3_4_prakIrNam/</loc>
   </url><url>
-    <loc>https://vishvAsa.github.io/sanskrit/simple_standard/2_saralasaMskRtasya_svarUpam/2_4_saMjnApadeShu_vibhaktiyojanam/2_4_1_avyutpannAnAM_saMjnAshabdAnAM_vibhaktiyojanam/</loc>
+    <loc>https://vishvAsa.github.io/sanskrit/registers/simple_standard/2_saralasaMskRtasya_svarUpam/2_4_saMjnApadeShu_vibhaktiyojanam/2_4_1_avyutpannAnAM_saMjnAshabdAnAM_vibhaktiyojanam/</loc>
   </url><url>
-    <loc>https://vishvAsa.github.io/sanskrit/simple_standard/2_saralasaMskRtasya_svarUpam/2_4_saMjnApadeShu_vibhaktiyojanam/2_4_2_saMjnAshabdAnAM_prayogaprakAraH/</loc>
+    <loc>https://vishvAsa.github.io/sanskrit/registers/simple_standard/2_saralasaMskRtasya_svarUpam/2_4_saMjnApadeShu_vibhaktiyojanam/2_4_2_saMjnAshabdAnAM_prayogaprakAraH/</loc>
   </url><url>
-    <loc>https://vishvAsa.github.io/sanskrit/simple_standard/2_saralasaMskRtasya_svarUpam/2_4_saMjnApadeShu_vibhaktiyojanam/2_4_3_prophesarasya_ityadayaH_asAdhavaH/</loc>
+    <loc>https://vishvAsa.github.io/sanskrit/registers/simple_standard/2_saralasaMskRtasya_svarUpam/2_4_saMjnApadeShu_vibhaktiyojanam/2_4_3_prophesarasya_ityadayaH_asAdhavaH/</loc>
   </url><url>
-    <loc>https://vishvAsa.github.io/sanskrit/simple_standard/2_saralasaMskRtasya_svarUpam/2_4_saMjnApadeShu_vibhaktiyojanam/2_4_4_AdarArthe_bahuvachanaprayogaH/</loc>
+    <loc>https://vishvAsa.github.io/sanskrit/registers/simple_standard/2_saralasaMskRtasya_svarUpam/2_4_saMjnApadeShu_vibhaktiyojanam/2_4_4_AdarArthe_bahuvachanaprayogaH/</loc>
   </url><url>
-    <loc>https://vishvAsa.github.io/sanskrit/simple_standard/3_saralamAnakasaMskRtasya_kriyAnvayanam/3_1_kriyAnvayanAya_xetrANi/</loc>
+    <loc>https://vishvAsa.github.io/sanskrit/registers/simple_standard/3_saralamAnakasaMskRtasya_kriyAnvayanam/3_1_kriyAnvayanAya_xetrANi/</loc>
   </url><url>
-    <loc>https://vishvAsa.github.io/sanskrit/simple_standard/3_saralamAnakasaMskRtasya_kriyAnvayanam/3_2_kriyAnvayanAya_kechana_upAyAH/</loc>
+    <loc>https://vishvAsa.github.io/sanskrit/registers/simple_standard/3_saralamAnakasaMskRtasya_kriyAnvayanam/3_2_kriyAnvayanAya_kechana_upAyAH/</loc>
   </url>
 </urlset>
