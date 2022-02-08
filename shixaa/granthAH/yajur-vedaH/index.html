@@ -132,7 +132,7 @@
 
 
     
-<header class="p-1 bg-yellow">
+<header class="p-1 bg-yellow noPrint">
     <nav role="navigation">
       <div id="div_top_bar" class="row">
         <div class="col-md-3 justify-content-start">
@@ -142,7 +142,7 @@
         </div>
         <div id="div_top_bar_right" class="col-md-auto d-flex justify-content-center">
           ✍
-          <select name="transliterationDropdown" size="1" onchange="module_transliteration.updateTransliteration()">
+          <select id="transliterationDropdown" size="1" onchange="module_transliteration.updateTransliteration()">
             <optgroup label="🌍">
               <option value="iso">āISO</option>
               <option value="cyrillic">пу</option>
@@ -175,16 +175,17 @@
             </optgroup>
           </select>
           🗨:
-          <select name="commentStyleDropdown" size="1" onchange="module_main.default.updateCommentStyleFromDropdown()">
+          <select id="commentStyleDropdown" size="1" onchange="module_main.default.updateCommentStyleFromDropdown()">
             <option value="on">✔</option>
             <option value="hidden">✗</option>
           </select>
-          <div><a  name="speakerButton" class="btn btn-secondary" onclick="module_main.default.handleSpeakToggle()">🎧️</a></div>
+          <div><a id="printButton" class="btn btn-secondary" onclick="module_ui_lib.updatePrintLayout()">🖨️️</a></div>
+          <div><a id="speakerButton" class="btn btn-secondary" onclick="module_main.default.handleSpeakToggle()">🎧️</a></div>
         </div>
         <div class="row col  d-flex justify-content-center">
           <a href="/full_search"  class="btn btn-secondary">🥽🔦</a>
-          <div><a  name="previousPage" href="" class="btn btn-secondary">###<i class="fas fa-caret-left"></i></a></div>
-          <div ><a name="nextPage" href="" class="btn btn-secondary"><i class="fas fa-caret-right"></i> ### </a></div>
+          <div><a id="previousPage" href="" class="btn btn-secondary">###<i class="fas fa-caret-left"></i></a></div>
+          <div ><a id="nextPage" href="" class="btn btn-secondary"><i class="fas fa-caret-right"></i> ### </a></div>
         </div>
         <ul id="top-bar-right-custom" class="list-group list-group-horizontal">
         </ul>
@@ -195,7 +196,7 @@
     
     <div class="row" name="contentRow">
       
-      <aside class="col-md-3 card border " id="sidebar">
+      <aside class="col-md-3 card border noPrint " id="sidebar">
           <div id="fastSearch">
               <input id="searchInput" placeholder="शीर्षिकान्विष्यताम्"  tabindex="0">
           </div>
@@ -213,12 +214,12 @@
 <header class='border d-flex justify-content-between'>
     <h1 id="&#43;यजुर्वेदः">&#43;यजुर्वेदः</h1>
     
-    <a id="editLink" class="btn btn-primary"  href="https://github.com/vishvAsa/sanskrit/edit/content/shixaa/granthAH/yajur-vedaH/_index.md"><i class="fas fa-edit"></i></a>
+    <a id="editLink" class="btn btn-primary noPrint"  href="https://github.com/vishvAsa/sanskrit/edit/content/shixaa/granthAH/yajur-vedaH/_index.md"><i class="fas fa-edit"></i></a>
     
 </header>
 <main>
     <article>
-  <aside id="toc_card" class="card border ">
+  <aside id="toc_card" class="card border noPrint ">
     <div id="toc_header" class="card-title border d-flex justify-content-between">
         <a data-toggle="collapse" href="#toc_body" role="button" aria-expanded="true" aria-controls="toc_body">
           What's in this page? <i class="fas fa-caret-down"></i> </a>
@@ -246,7 +247,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/">&#43;यजुर्वेदः </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -272,7 +273,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/kRShNaH/">&#43;कृष्णः </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -295,7 +296,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/shuklaH/">&#43;शुक्लः </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -326,7 +327,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/kRShNaH/">&#43;कृष्णः </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -352,7 +353,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/kRShNaH/upashixA/">&#43;उपशिक्षा </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -375,7 +376,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/kRShNaH/atreya2_shiksha/">आत्रेय शिक्षा </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -398,7 +399,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/kRShNaH/atreya1_shiksha/">आत्रेय शिक्षा कारिका </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -421,7 +422,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/kRShNaH/apishali_shiksha/">आपिशलि शिक्षा </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -444,7 +445,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/kRShNaH/aranya_shiksha/">आरण्य शिक्षा </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -467,7 +468,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/kRShNaH/kalanirnaya_shiksha/">कालनिर्णय शिक्षा </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -490,7 +491,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/kRShNaH/kaundinya_mysore_shiksha/">कौण्डिन्य शिक्षा </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -513,7 +514,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/kRShNaH/kauhaliya_shiksha/">कौहलीय शिक्षा </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -536,7 +537,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/kRShNaH/carayaniya_shiksha/">चारायणीय शिक्षा </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -559,7 +560,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/kRShNaH/taittirIya-prAtishAkhyam/">तैत्तिरीयप्रातिशाख्यम् </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -584,7 +585,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/kRShNaH/pari_shiksha/">पारि शिक्षा </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -607,7 +608,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/kRShNaH/pluta_shiksha/">प्लुत शिक्षा </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -630,7 +631,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/kRShNaH/bharadvaja_shiksha/">भारद्वाज शिक्षा </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -653,7 +654,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/kRShNaH/yohiprati_shishA/">योहिप्राप्ति शिक्षा </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -678,7 +679,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/kRShNaH/lakshmikanta_shiksha/">लक्ष्मीकान्त शिक्षा </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -701,7 +702,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/kRShNaH/laugakshi_shiksha/">लौगाक्षि शिक्षा </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -724,7 +725,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/kRShNaH/vararuchi_shiksha/">वररुचि शिक्षा </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -747,7 +748,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/kRShNaH/vasishtha_shiksha/">वासिष्ठ शिक्षा </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -770,7 +771,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/kRShNaH/vasishthi_tirupati_shiksha/">वासिष्ठ शिक्षा </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -793,7 +794,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/kRShNaH/veda_shiksha/">वेद शिक्षा </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -816,7 +817,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/kRShNaH/vyasa_shiksha/">व्यास शिक्षा </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -839,7 +840,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/kRShNaH/shambhu_shiksha/">शम्भु शिक्षा </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -862,7 +863,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/kRShNaH/shyamayaniya_shiksha/">श्यामायनीया शिक्षा </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -885,7 +886,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/kRShNaH/kaundinya_hyd_shiksha/">श्रीकौण्डिन्यशिक्षा </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -908,7 +909,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/kRShNaH/sarvasammata_shiksha/">सर्वसंमत शिक्षा </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -931,7 +932,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/kRShNaH/siddhanta_shiksha/">सिद्धान्त शिक्षा </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -954,7 +955,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/kRShNaH/svara_shiksha/">स्वर शिक्षा </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -977,7 +978,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/kRShNaH/svarasarabhutavarnakrama_shiksha/">स्वरसारभूतवर्णक्रम शिक्षा </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1008,7 +1009,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/kRShNaH/upashixA/">&#43;उपशिक्षा </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1034,7 +1035,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/kRShNaH/upashixA/uccodarki/">                       उच्चोदर्कि </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1057,7 +1058,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/kRShNaH/upashixA/jatavalli/">                       जटावल्ली </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1080,7 +1081,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/kRShNaH/upashixA/svara_panchashat/">                       स्वरपञ्चाशत् </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1103,7 +1104,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/kRShNaH/upashixA/Antanirdesha/">अन्तनिर्देशम् </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1126,7 +1127,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/kRShNaH/upashixA/Arunashamanam/">अरुणशमानम् </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1149,7 +1150,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/kRShNaH/upashixA/ardhantyam/">अर्धान्त्यम् </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1172,7 +1173,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/kRShNaH/upashixA/ingya_ratnam/">इङ्ग्यरत्नम् </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1195,7 +1196,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/kRShNaH/upashixA/kampa_sutra/">कम्प सूत्रम् </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1218,7 +1219,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/kRShNaH/upashixA/Jatamani/">जटामणि </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1241,7 +1242,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/kRShNaH/upashixA/jata_siddhanta_candrika/">जटासिद्धान्तचन्द्रिका </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1264,7 +1265,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/kRShNaH/upashixA/Trikrama_Lakshanam/">त्रिक्रमलक्षणम् </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1287,7 +1288,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/kRShNaH/upashixA/dvitvalakshanam/">द्वित्वलक्षणम् </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1310,7 +1311,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/kRShNaH/upashixA/Naradabaith/">नारदबैठ् </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1333,7 +1334,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/kRShNaH/upashixA/Naradabaith_Vyakhya/">नारदबैड्व्याख्या </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1356,7 +1357,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/kRShNaH/upashixA/Svaravadhanalakshana/">परिभाषा </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1379,7 +1380,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/kRShNaH/upashixA/Pranava_Vichara/">प्रणवविचारः </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1402,7 +1403,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/kRShNaH/upashixA/yajur_veda_saptalakshana/">यजुर्वेदसप्तलक्षण </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1425,7 +1426,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/kRShNaH/upashixA/yanadeshadirhginishedha/">यणादेशदीर्घिनिषेधः </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1448,7 +1449,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/kRShNaH/upashixA/yamapatti/">यमापत्ति </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1471,7 +1472,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/kRShNaH/upashixA/Yohi_Bhashya/">योहि भाष्य </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1494,7 +1495,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/kRShNaH/upashixA/Ravanabaith/">रावणबैठ् </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1517,7 +1518,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/kRShNaH/upashixA/Ravanabaith_paribhasha/">रावणबैठ् </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1540,7 +1541,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/kRShNaH/upashixA/varnakrama_lakshanam/">वर्णक्रमलक्षणम् </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1563,7 +1564,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/kRShNaH/upashixA/visargangulipradarshanaprakarah/">विसर्गाङ्गुलिप्रदर्शनप्रकारः </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1586,7 +1587,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/kRShNaH/upashixA/visarjaniya_lakshanam/">विसर्जनीयलक्षणम् </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1609,7 +1610,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/kRShNaH/upashixA/Vaidyanatha_Baith/">वैद्यनाथबैठ् </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1632,7 +1633,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/kRShNaH/upashixA/Shakhashamanam/">शाखाशमानम् </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1655,7 +1656,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/kRShNaH/upashixA/Shadvimshati_Sutra/">षड्विंशति सूत्र </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1678,7 +1679,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/kRShNaH/upashixA/svara_samparki/">स्वरसंपर्कि </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1721,7 +1722,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/shuklaH/">&#43;शुक्लः </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1747,7 +1748,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/shuklaH/upashixA/">&#43;उपशिक्षा </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1770,7 +1771,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/shuklaH/amoghanandini_shiksha/">अमोघानन्दिनी शिक्षा </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1793,7 +1794,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/shuklaH/avasananirnaya_shiksha/">अवसाननिर्णय शिक्षा </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1816,7 +1817,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/shuklaH/kanva_shiksha/">काण्व शिक्षा </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1839,7 +1840,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/shuklaH/katyayana_shiksha/">कात्यायन शिक्षा </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1862,7 +1863,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/shuklaH/katyayani_shiksha/">कात्यायनी शिक्षा </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1885,7 +1886,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/shuklaH/keshavi_padyatmika_shiksha/">केशवीपद्यात्मिका शिक्षा </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1908,7 +1909,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/shuklaH/keshava_shiksha/">केशवीय शिक्षा </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1931,7 +1932,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/shuklaH/kaushiki_shiksha/">कौशिकी शिक्षा </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1954,7 +1955,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/shuklaH/kramasandhana_shiksha/">क्रमसंधान शिक्षा </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1977,7 +1978,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/shuklaH/galadrik_shiksha/">गलदृक् शिक्षा </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2000,7 +2001,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/shuklaH/parashara_shiksha/">पाराशरीय शिक्षा </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2023,7 +2024,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/shuklaH/pratishakhyapradipa_shiksha/">प्रातिशाख्यप्रदीपशिक्षा </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2046,7 +2047,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/shuklaH/bhAShika-sUtrANi/">भाषिकसूत्राणि </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2071,7 +2072,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/shuklaH/manahsvara_shiksha/">मनःस्वार शिक्षा </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2094,7 +2095,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/shuklaH/mallasharma_shiksha/">मल्लशर्म शिक्षा </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2117,7 +2118,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/shuklaH/mandavya_shiksha/">माण्डव्य शिक्षा </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2140,7 +2141,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/shuklaH/madhyandina_shiksha/">माध्यन्दिनीय शिक्षा </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2163,7 +2164,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/shuklaH/yajurvidhana_shiksha/">यजुर्विधान शिक्षा </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2186,7 +2187,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/shuklaH/yagyavalkya_shiksha/">यज्ञवल्क्यऋषिप्रणीता याज्ञवल्क्यशिक्षा </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2209,7 +2210,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/shuklaH/laghumadhyandina_shiksha/">लघुमाध्यन्दिनीय शिक्षा </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2232,7 +2233,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/shuklaH/laghvamoghanandini_shiksha/">लघ्वमोघानन्दिनी शिक्षा </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2255,7 +2256,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/shuklaH/varnaratnapradipika_shiksha/">वर्णरत्नप्रदीपिका शिक्षा </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2278,7 +2279,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/shuklaH/vasishthi_shiksha/">वासिष्ठी शिक्षा </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2301,7 +2302,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/shuklaH/vedaparibhashakarika_shiksha/">वेदपरिभाषाकारिका शिक्षा </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2324,7 +2325,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/shuklaH/vedaparibhashasutra_shiksha/">वेदपरिभाषासूत्र शिक्षा </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2347,7 +2348,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/shuklaH/shodashashloki_shiksha/">षोडशश्लोकी शिक्षा </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2370,7 +2371,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/shuklaH/svarabhaktilakshanaparishishtha_shiksha/">स्वरभक्तिलक्षणपरिशिष्टा शिक्षा </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2393,7 +2394,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/shuklaH/svarashtaka_shiksha/">स्वराष्टक शिक्षा </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2424,7 +2425,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/shuklaH/upashixA/">&#43;उपशिक्षा </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2450,7 +2451,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/shuklaH/upashixA/padakarikaratnamala/">पदकारिकारत्नमाला </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2473,7 +2474,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/shuklaH/upashixA/padachandrika/">पदचन्द्रिका </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2496,7 +2497,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/shixaa/granthAH/yajur-vedaH/shuklaH/upashixA/pratijna_sutra/">प्रतिज्ञा सूत्रम् </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2548,7 +2549,7 @@
     <a class="btn btn-secondary" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a>
     <div class="btn small border">
       
-      <a href="https://github.com/vishvAsa/sanskrit/actions/workflows/build.yml"><img src="https://github.com/vishvAsa/sanskrit/actions/workflows/build.yml/badge.svg"> Built </a> on 2022 Feb 8 12:37:07 UTC. (<a href="http://google.com/search?q=12%3a37%3a07%20UTC to IST">IST</a>)
+      <a href="https://github.com/vishvAsa/sanskrit/actions/workflows/build.yml"><img src="https://github.com/vishvAsa/sanskrit/actions/workflows/build.yml/badge.svg"> Built </a> on 2022 Feb 8 16:04:08 UTC. (<a href="http://google.com/search?q=16%3a04%3a08%20UTC to IST">IST</a>)
     </div>
   <ul id="footer-bar-right-custom" class="list-group list-group-horizontal">
   </ul>

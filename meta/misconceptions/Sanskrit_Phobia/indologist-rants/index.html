@@ -149,7 +149,7 @@
 
 
     
-<header class="p-1 bg-yellow">
+<header class="p-1 bg-yellow noPrint">
     <nav role="navigation">
       <div id="div_top_bar" class="row">
         <div class="col-md-3 justify-content-start">
@@ -159,7 +159,7 @@
         </div>
         <div id="div_top_bar_right" class="col-md-auto d-flex justify-content-center">
           ✍
-          <select name="transliterationDropdown" size="1" onchange="module_transliteration.updateTransliteration()">
+          <select id="transliterationDropdown" size="1" onchange="module_transliteration.updateTransliteration()">
             <optgroup label="🌍">
               <option value="iso">āISO</option>
               <option value="cyrillic">пу</option>
@@ -192,16 +192,17 @@
             </optgroup>
           </select>
           🗨:
-          <select name="commentStyleDropdown" size="1" onchange="module_main.default.updateCommentStyleFromDropdown()">
+          <select id="commentStyleDropdown" size="1" onchange="module_main.default.updateCommentStyleFromDropdown()">
             <option value="on">✔</option>
             <option value="hidden">✗</option>
           </select>
-          <div><a  name="speakerButton" class="btn btn-secondary" onclick="module_main.default.handleSpeakToggle()">🎧️</a></div>
+          <div><a id="printButton" class="btn btn-secondary" onclick="module_ui_lib.updatePrintLayout()">🖨️️</a></div>
+          <div><a id="speakerButton" class="btn btn-secondary" onclick="module_main.default.handleSpeakToggle()">🎧️</a></div>
         </div>
         <div class="row col  d-flex justify-content-center">
           <a href="/full_search"  class="btn btn-secondary">🥽🔦</a>
-          <div><a  name="previousPage" href="" class="btn btn-secondary">###<i class="fas fa-caret-left"></i></a></div>
-          <div ><a name="nextPage" href="" class="btn btn-secondary"><i class="fas fa-caret-right"></i> ### </a></div>
+          <div><a id="previousPage" href="" class="btn btn-secondary">###<i class="fas fa-caret-left"></i></a></div>
+          <div ><a id="nextPage" href="" class="btn btn-secondary"><i class="fas fa-caret-right"></i> ### </a></div>
         </div>
         <ul id="top-bar-right-custom" class="list-group list-group-horizontal">
         </ul>
@@ -212,7 +213,7 @@
     
     <div class="row" name="contentRow">
       
-      <aside class="col-md-3 card border " id="sidebar">
+      <aside class="col-md-3 card border noPrint " id="sidebar">
           <div id="fastSearch">
               <input id="searchInput" placeholder="शीर्षिकान्विष्यताम्"  tabindex="0">
           </div>
@@ -230,11 +231,11 @@
 <header class='border d-flex justify-content-between'>
     <h1 id="Indologist rants">Indologist rants</h1>
     
-    <a id="editLink" class="btn btn-primary"  href="https://github.com/vishvAsa/sanskrit/edit/content/meta/misconceptions/Sanskrit_Phobia/indologist-rants.md"><i class="fas fa-edit"></i></a>
+    <a id="editLink" class="btn btn-primary noPrint"  href="https://github.com/vishvAsa/sanskrit/edit/content/meta/misconceptions/Sanskrit_Phobia/indologist-rants.md"><i class="fas fa-edit"></i></a>
     
 </header>
 <article>
-  <aside id="toc_card" class="card border ">
+  <aside id="toc_card" class="card border noPrint ">
     <div id="toc_header" class="card-title border d-flex justify-content-between">
         <a data-toggle="collapse" href="#toc_body" role="button" aria-expanded="true" aria-controls="toc_body">
           What's in this page? <i class="fas fa-caret-down"></i> </a>
@@ -500,7 +501,7 @@ overweening pride that such speakers often seem to project.</strong></p>
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/meta/misconceptions/Sanskrit_Phobia/indologist-rants/">Indologist rants </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -530,7 +531,7 @@ overweening pride that such speakers often seem to project.</strong></p>
     <a class="btn btn-secondary" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a>
     <div class="btn small border">
       
-      <a href="https://github.com/vishvAsa/sanskrit/actions/workflows/build.yml"><img src="https://github.com/vishvAsa/sanskrit/actions/workflows/build.yml/badge.svg"> Built </a> on 2022 Feb 8 12:37:07 UTC. (<a href="http://google.com/search?q=12%3a37%3a07%20UTC to IST">IST</a>)
+      <a href="https://github.com/vishvAsa/sanskrit/actions/workflows/build.yml"><img src="https://github.com/vishvAsa/sanskrit/actions/workflows/build.yml/badge.svg"> Built </a> on 2022 Feb 8 16:04:08 UTC. (<a href="http://google.com/search?q=16%3a04%3a08%20UTC to IST">IST</a>)
     </div>
   <ul id="footer-bar-right-custom" class="list-group list-group-horizontal">
   </ul>

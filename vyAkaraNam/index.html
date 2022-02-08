@@ -132,7 +132,7 @@
 
 
     
-<header class="p-1 bg-yellow">
+<header class="p-1 bg-yellow noPrint">
     <nav role="navigation">
       <div id="div_top_bar" class="row">
         <div class="col-md-3 justify-content-start">
@@ -142,7 +142,7 @@
         </div>
         <div id="div_top_bar_right" class="col-md-auto d-flex justify-content-center">
           ✍
-          <select name="transliterationDropdown" size="1" onchange="module_transliteration.updateTransliteration()">
+          <select id="transliterationDropdown" size="1" onchange="module_transliteration.updateTransliteration()">
             <optgroup label="🌍">
               <option value="iso">āISO</option>
               <option value="cyrillic">пу</option>
@@ -175,16 +175,17 @@
             </optgroup>
           </select>
           🗨:
-          <select name="commentStyleDropdown" size="1" onchange="module_main.default.updateCommentStyleFromDropdown()">
+          <select id="commentStyleDropdown" size="1" onchange="module_main.default.updateCommentStyleFromDropdown()">
             <option value="on">✔</option>
             <option value="hidden">✗</option>
           </select>
-          <div><a  name="speakerButton" class="btn btn-secondary" onclick="module_main.default.handleSpeakToggle()">🎧️</a></div>
+          <div><a id="printButton" class="btn btn-secondary" onclick="module_ui_lib.updatePrintLayout()">🖨️️</a></div>
+          <div><a id="speakerButton" class="btn btn-secondary" onclick="module_main.default.handleSpeakToggle()">🎧️</a></div>
         </div>
         <div class="row col  d-flex justify-content-center">
           <a href="/full_search"  class="btn btn-secondary">🥽🔦</a>
-          <div><a  name="previousPage" href="" class="btn btn-secondary">###<i class="fas fa-caret-left"></i></a></div>
-          <div ><a name="nextPage" href="" class="btn btn-secondary"><i class="fas fa-caret-right"></i> ### </a></div>
+          <div><a id="previousPage" href="" class="btn btn-secondary">###<i class="fas fa-caret-left"></i></a></div>
+          <div ><a id="nextPage" href="" class="btn btn-secondary"><i class="fas fa-caret-right"></i> ### </a></div>
         </div>
         <ul id="top-bar-right-custom" class="list-group list-group-horizontal">
         </ul>
@@ -195,7 +196,7 @@
     
     <div class="row" name="contentRow">
       
-      <aside class="col-md-3 card border " id="sidebar">
+      <aside class="col-md-3 card border noPrint " id="sidebar">
           <div id="fastSearch">
               <input id="searchInput" placeholder="शीर्षिकान्विष्यताम्"  tabindex="0">
           </div>
@@ -213,12 +214,12 @@
 <header class='border d-flex justify-content-between'>
     <h1 id="&#43;व्याकरणम्">&#43;व्याकरणम्</h1>
     
-    <a id="editLink" class="btn btn-primary"  href="https://github.com/vishvAsa/sanskrit/edit/content/vyAkaraNam/_index.md"><i class="fas fa-edit"></i></a>
+    <a id="editLink" class="btn btn-primary noPrint"  href="https://github.com/vishvAsa/sanskrit/edit/content/vyAkaraNam/_index.md"><i class="fas fa-edit"></i></a>
     
 </header>
 <main>
     <article>
-  <aside id="toc_card" class="card border ">
+  <aside id="toc_card" class="card border noPrint ">
     <div id="toc_header" class="card-title border d-flex justify-content-between">
         <a data-toggle="collapse" href="#toc_body" role="button" aria-expanded="true" aria-controls="toc_body">
           What's in this page? <i class="fas fa-caret-down"></i> </a>
@@ -298,7 +299,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/">&#43;व्याकरणम् </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -326,7 +327,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/accounting_for_variants/">&#43;Accounting for variants </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -349,7 +350,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/goldman/">&#43;Goldman </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -372,7 +373,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/whitney/">&#43;whitney </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -395,7 +396,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/">&#43;पाणिनीयम् </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -420,7 +421,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/shabdabodhaH/">&#43;शाब्दबोधः </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -445,7 +446,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/shixaNam/">&#43;शिक्षणम् </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -470,7 +471,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/deshpANDe/">M Deshpande </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -501,7 +502,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/accounting_for_variants/">&#43;Accounting for variants </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -527,7 +528,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/accounting_for_variants/h_before_vowel/">H before vowel </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -564,7 +565,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/goldman/">&#43;Goldman </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -590,7 +591,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/goldman/00/">00 </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -615,7 +616,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/goldman/01_Phonology/">01 Phonology </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -640,7 +641,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/goldman/02_The_devanAgarI_Script/">02 The देवनागरी Script </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -665,7 +666,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/goldman/03_sandhi/">03 सन्धि </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -690,7 +691,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/goldman/04_Parts_of_Speech_and_the_Sanskrit_Sentence/">04 Parts of Speech and the Sanskrit Sentence </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -715,7 +716,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/goldman/05_strIlinga_Feminine_Nouns_in_A_chaturthI_panchamI_and_saptamI_vibhakti-s_Demonstrative_Pronouns/">05 स्त्रीलिङ्ग Feminine Nouns in आ ; चतुर्थी, पञ्चमी and सप्तमी विभक्ति-s; Demonstrative Pronouns </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -740,7 +741,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/goldman/06_Nominal_Stems_in_-i_and_-u_Interrogative_Relative_and_Correlative_Clauses_The_k-ya-t_Series_of_Indeclinables_and_Pronouns/">06 Nominal Stems in -इ and -उ; Interrogative, Relative, and Correlative Clauses: The क्-य-त् Series of Indeclinables and Pronouns </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -765,7 +766,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/goldman/07_strIlinga_Feminine_Stems_in_I_The_gaNa-s_of_the_Present_System/">07 स्त्रीलिङ्ग (Feminine) Stems in ई; The गण-s of the Present System </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -790,7 +791,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/goldman/08_Noun_Stem_Strength_Noun_Stems_in-an_anadyatanabhUte_la~N_The_Imperfect_upasarga-s_Upasarga-s/">08 Noun Stem Strength; Noun Stems in-अन्; अनद्यतनभूते लङ्, The Imperfect; उपसर्ग-s (Upasarga-s) </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -815,7 +816,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/goldman/09_Noun_Stems_in_aH_The_karmaNi_prayoga/">09 Noun Stems in अः; The कर्मणि प्रयोग </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -840,7 +841,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/goldman/10_Nominal_Stems_in_-_R_Verbal_Adjectives_bhUte_kRdantaH/">10 Nominal Stems in - ऋ; Verbal Adjectives; भूते कृदन्तः </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -865,7 +866,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/goldman/11_Stems_in_-anta_Adjectival_Suffixes_in-mant_and_-vantaH_The_ktavatu_Past_Active_Participle_The_tvAnta_lyabanta_Gerund_The_loT_Imperative/">11 Stems in -अन्त; Adjectival Suffixes in-मन्त् and -वन्तः The क्तवतु (Past Active Participle); The त्वान्त, ल्यबन्त (Gerund); The लोट् (Imperative) </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -890,7 +891,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/goldman/12_Nominal_Stems_in_in_samAsa_Nominal_Composition/">12 Nominal Stems in इन्; समास (Nominal Composition) </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -915,7 +916,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/goldman/13_tumananta_The_Infinitive_samAsa_Continued_bahuvrIhi_Application_of_karmadhAraya_and_tatpuruSha_samAsa-s_The_dvigu_samAsa/">13 तुमनन्त (The Infinitive); समास Continued; बहुव्रीहि Application of कर्मधारय and तत्पुरुष समास-s, The द्विगु समास </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -940,7 +941,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/goldman/14_samAsa_Concluded_The_dvandva_and_avyayIbhAva_samAsa-s_The_vidhi_li~N_Optative/">14 समास Concluded; The द्वन्द्व and अव्ययीभाव समास-s; The विधि लिङ् (Optative) </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -965,7 +966,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/goldman/15_vartamAne_kRdantaH_The_Present_Participle/">15 वर्तमाने कृदन्तः (The Present Participle) </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -990,7 +991,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/goldman/16_Non-gaNa_Conjugations_The_laT_la~N_and_luT_Future_System_and_the_Conditional_kRtya_Gerundive/">16 Non-गण Conjugations; The लट्, लङ्, and लुट् (Future System and the Conditional); कृत्य (Gerundive) </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1015,7 +1016,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/goldman/17_paroxabhUte_liT_The_Perfect_The_Perfect_Participle/">17 परोक्षभूते लिट् (The Perfect); The Perfect Participle </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1040,7 +1041,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/goldman/18_Nijanta_savanta_and_ya~Nanta_Secondary_Conjugations_nAmadhAtu_The_Denominative/">18 णिजन्त, सवन्त, and यङन्त Secondary Conjugations; नामधातु (The Denominative) </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1065,7 +1066,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/goldman/19_sarvanAman_Additional_Pronouns_saMkhyA_-s_Numerals_adyatanabhUte_la~N_The_Aorist_Systems/">19 सर्वनामन् (Additional Pronouns); संख्या -s (Numerals); अद्यतनभूते लङ् (The Aorist Systems) </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1090,7 +1091,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/goldman/20_kRt_and_taddhita-pratyayAH_chvi_Nominal_Derivation_and_Sanskrit_Vocabulary/">20 कृत् and तद्धित-प्रत्ययाः, च्वि, Nominal Derivation and Sanskrit Vocabulary </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1115,7 +1116,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/goldman/21_Additional_Consonantal_Stem_Formations_Stems_with_Final_saMyukta_Vowels_Some_Irregular_Nominal_Declensions_Declension_of_the_Comparative_Suffix_yAMs_yaH_Some_Remarks_on_Adverbial_Formation/">21 Additional Consonantal Stem Formations; Stems with Final संयुक्त Vowels; Some Irregular Nominal Declensions; Declension of the Comparative Suffix यांस्, यः; Some Remarks on Adverbial Formation </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1140,7 +1141,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/goldman/22_Readings_from_the_vAlmIki-rAmAyaNam/">22 Readings from the वाल्मीकि-रामायणम् </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1165,7 +1166,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/goldman/GLOSSARY/">GLOSSARY </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1204,7 +1205,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/whitney/">&#43;whitney </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1230,7 +1231,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/whitney/01_Sanskrit_Grammar_Whitney/">01 Sanskrit Grammar (Whitney) </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1253,7 +1254,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/whitney/02_Preface/">02 Preface </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1276,7 +1277,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/whitney/03_Introduction/">03 Introduction </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1299,7 +1300,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/whitney/04_Abbreviations/">04 Abbreviations </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1322,7 +1323,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/whitney/05_Chapter_I_ALPHABET/">05 Chapter I ALPHABET </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1345,7 +1346,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/whitney/06_Chapter_II_PRONUNCIATION/">06 Chapter II PRONUNCIATION </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1368,7 +1369,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/whitney/07_Chapter_III_EUPHONIC_COMBINATION/">07 Chapter III EUPHONIC COMBINATION </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1391,7 +1392,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/whitney/08_Chapter_IV_DECLENSION/">08 Chapter IV DECLENSION </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1414,7 +1415,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/whitney/09_Chapter_V_NOUNS_AND_ADJECTIVES/">09 Chapter V NOUNS AND ADJECTIVES </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1437,7 +1438,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/whitney/10_Chapter_VI_NUMERALS/">10 Chapter VI NUMERALS </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1460,7 +1461,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/whitney/11_Chapter_VII_PRONOUNS/">11 Chapter VII PRONOUNS </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1483,7 +1484,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/whitney/12_Chapter_VIII_CONJUGATION/">12 Chapter VIII CONJUGATION </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1506,7 +1507,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/whitney/13_Chapter_IX_PRESENT-SYSTEM/">13 Chapter IX PRESENT-SYSTEM </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1529,7 +1530,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/whitney/14_Chapter_X_PERFECT-SYSTEM/">14 Chapter X PERFECT-SYSTEM </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1552,7 +1553,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/whitney/15_Chapter_XI_AORIST_SYSTEMS/">15 Chapter XI AORIST SYSTEMS </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1575,7 +1576,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/whitney/16_Chapter_XII_FUTURE-SYSTEMS/">16 Chapter XII FUTURE-SYSTEMS </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1598,7 +1599,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/whitney/17_Chapter_XIII_VERBAL_ADJECTIVES_AND_NOUNS_PARTICIPLES_INFINITIVES_GERUNDS/">17 Chapter XIII VERBAL ADJECTIVES AND NOUNS: PARTICIPLES, INFINITIVES, GERUNDS </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1621,7 +1622,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/whitney/18_Chapter_XIV_DERIVATIVE_OR_SECONDARY_CONJUGATION/">18 Chapter XIV DERIVATIVE OR SECONDARY CONJUGATION </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1644,7 +1645,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/whitney/19_Chapter_XV_PERIPHRASTIC_AND_COMPOUND_CONJUGATION/">19 Chapter XV PERIPHRASTIC AND COMPOUND CONJUGATION </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1667,7 +1668,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/whitney/20_Chapter_XVI_INDECLINABLES/">20 Chapter XVI INDECLINABLES </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1690,7 +1691,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/whitney/21_Chapter_XVII_DERIVATION_OF_DECLINABLE_STEMS/">21 Chapter XVII DERIVATION OF DECLINABLE STEMS </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1713,7 +1714,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/whitney/22_Chapter_XVIII_FORMATION_OF_COMPOUND_STEMS/">22 Chapter XVIII FORMATION OF COMPOUND STEMS </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1736,7 +1737,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/whitney/23_Appendix/">23 Appendix </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1759,7 +1760,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/whitney/24_Sanskrit_Index/">24 Sanskrit Index </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1782,7 +1783,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/whitney/25_General_Index/">25 General Index </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1805,7 +1806,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/whitney/26_Errata/">26 Errata </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1842,7 +1843,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/">&#43;पाणिनीयम् </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1870,7 +1871,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/taddhitam/">&#43;तद्धितम् </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1895,7 +1896,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/dhAtukArikAH/">&#43;धातुकारिकाः </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1920,7 +1921,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/dhAtu-prakriyA/">&#43;धातुप्रक्रियाः </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1945,7 +1946,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/dhAtu-pratyaya-vidhiH/">&#43;धातुप्रत्ययविधिः </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1970,7 +1971,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/mahAbhAShyam/">&#43;महाभाष्यम् </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1993,7 +1994,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/vAkya-staram/">&#43;वाक्यस्तरम् </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2018,7 +2019,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/saMjJNA/">&#43;संज्ञा </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2043,7 +2044,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/sandhiH/">&#43;सन्धिः </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2068,7 +2069,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/samAsaH/">&#43;समासः </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2093,7 +2094,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/paribhAShA/">परिभाषाः </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2118,7 +2119,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/prAtipadika-prakriyA/">प्रातिपदिक-प्रक्रिया </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2143,7 +2144,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/mUlAni/">मूलानि </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2168,7 +2169,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/shixaNam/">शिक्षणम् </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2193,7 +2194,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/svaraH/">स्वरः </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2226,7 +2227,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/taddhitam/">&#43;तद्धितम् </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2254,7 +2255,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/taddhitam/sUtrANi/">सूत्राणि </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2293,7 +2294,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/dhAtukArikAH/">&#43;धातुकारिकाः </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2321,7 +2322,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/dhAtukArikAH/aniTvidhiH/">अनिट् </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2344,7 +2345,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/dhAtukArikAH/kaNDvAdayaH/">कण्ड्वादयः </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2369,7 +2370,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/dhAtukArikAH/kryAdayaH/">क्र्यादयः </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2394,7 +2395,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/dhAtukArikAH/churAdayaH/">चुरादयः </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2433,7 +2434,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/dhAtu-prakriyA/">&#43;धातुप्रक्रियाः </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2461,7 +2462,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/dhAtu-prakriyA/angAni/">&#43;अङ्गानि </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2486,7 +2487,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/dhAtu-prakriyA/la/">&#43;लँ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2511,7 +2512,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/dhAtu-prakriyA/dhAtu-nirmANam/">धातुनिर्माणम् </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2544,7 +2545,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/dhAtu-prakriyA/angAni/">&#43;अङ्गानि </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2572,7 +2573,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/dhAtu-prakriyA/angAni/abhyAsaH/">अभ्यासः </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2597,7 +2598,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/dhAtu-prakriyA/angAni/ArdhadhAtuka-kAryANi/">आर्धधातुककार्याणि </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2622,7 +2623,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/dhAtu-prakriyA/angAni/iDAgama-nishcayaH/">इट्-आगम-निश्चयः </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2647,7 +2648,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/dhAtu-prakriyA/angAni/it-saMjJNAH/">इत्-संज्ञाः </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2672,7 +2673,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/dhAtu-prakriyA/angAni/kNit/">क्ङिति </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2697,7 +2698,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/dhAtu-prakriyA/angAni/dhAtuvivekaH/">धातुविवेकः </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2722,7 +2723,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/dhAtu-prakriyA/angAni/puruSha-vachana-chitiH/">पुरुषवचन-चितिः </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2747,7 +2748,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/dhAtu-prakriyA/angAni/lakAra-chayanam/">लकारचयनम् </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2772,7 +2773,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/dhAtu-prakriyA/angAni/laN-tiN/">लङ्वत् तिङ् </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2797,7 +2798,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/dhAtu-prakriyA/angAni/laT-tiN/">लट्वत् तिङः </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2822,7 +2823,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/dhAtu-prakriyA/angAni/vivaxA-kalanam/">विवक्षाकलनम् </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2847,7 +2848,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/dhAtu-prakriyA/angAni/sArvadhAtuka-saMjJNA/">सार्द्वधातुकसंज्ञा </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2872,7 +2873,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/dhAtu-prakriyA/angAni/sArvadhAtuka-kAryANi/">सार्वधातुके </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2911,7 +2912,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/dhAtu-prakriyA/la/">&#43;लँ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2939,7 +2940,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/dhAtu-prakriyA/la/AshIr-liN/">आशीर्लिङ् </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2964,7 +2965,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/dhAtu-prakriyA/la/laN/">लङ् </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2989,7 +2990,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/dhAtu-prakriyA/la/liT/">लिट् </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -3014,7 +3015,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/dhAtu-prakriyA/la/luN/">लुङ् </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -3039,7 +3040,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/dhAtu-prakriyA/la/luT/">लुट् </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -3064,7 +3065,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/dhAtu-prakriyA/la/lRN/">लृङ् </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -3089,7 +3090,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/dhAtu-prakriyA/la/lRT/">लृट् </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -3114,7 +3115,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/dhAtu-prakriyA/la/laT/">वर्तमाने लट् </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -3139,7 +3140,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/dhAtu-prakriyA/la/loT/">विधिलिङ् </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -3164,7 +3165,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/dhAtu-prakriyA/la/vidhi-liN/">विधिलिङ् </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -3209,7 +3210,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/dhAtu-pratyaya-vidhiH/">&#43;धातुप्रत्ययविधिः </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -3237,7 +3238,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/dhAtu-pratyaya-vidhiH/kRt/">&#43;कृत् </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -3260,7 +3261,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/dhAtu-pratyaya-vidhiH/tiNantAni/">&#43;धातुरूपावलिः </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -3285,7 +3286,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/dhAtu-pratyaya-vidhiH/pratyayAdeshaH/">प्रत्ययादेशः </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -3310,7 +3311,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/dhAtu-pratyaya-vidhiH/la/">लँ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -3335,7 +3336,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/dhAtu-pratyaya-vidhiH/lArthAH/">लाँर्थाः </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -3360,7 +3361,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/dhAtu-pratyaya-vidhiH/luN/">लुँङ् </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -3393,7 +3394,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/dhAtu-pratyaya-vidhiH/kRt/">&#43;कृत् </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -3419,7 +3420,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/dhAtu-pratyaya-vidhiH/kRt/ArdhadhAtuka-kRdanta-koshaH/">आर्धधातुककृदन्तकोशः </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -3442,7 +3443,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/dhAtu-pratyaya-vidhiH/kRt/karaNAdhikaraNayoH/">करणाधिकरणयोः </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -3467,7 +3468,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/dhAtu-pratyaya-vidhiH/kRt/kRtyaH/">कृत्यः </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -3492,7 +3493,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/dhAtu-pratyaya-vidhiH/kRt/Chandasi/">छन्दसि </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -3517,7 +3518,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/dhAtu-pratyaya-vidhiH/kRt/bhaviShyati/">भविष्यति </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -3542,7 +3543,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/dhAtu-pratyaya-vidhiH/kRt/bhAve/">भावे </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -3567,7 +3568,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/dhAtu-pratyaya-vidhiH/kRt/bhUte/">भूते </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -3592,7 +3593,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/dhAtu-pratyaya-vidhiH/kRt/vartamAne/">वर्तमाने </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -3631,7 +3632,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/dhAtu-pratyaya-vidhiH/tiNantAni/">&#43;धातुरूपावलिः </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -3659,7 +3660,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/dhAtu-pratyaya-vidhiH/tiNantAni/tinantAni/">तिङन्तानि </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -3704,7 +3705,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/mahAbhAShyam/">&#43;महाभाष्यम् </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -3730,7 +3731,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/mahAbhAShyam/01_paspashAhnikam/">&#43;०१ पस्पशाह्निकम् </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -3755,7 +3756,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/mahAbhAShyam/02_pratyAhArAhnikam/">०२ प्रत्याहाराह्निकम् </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -3788,7 +3789,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/mahAbhAShyam/01_paspashAhnikam/">&#43;०१ पस्पशाह्निकम् </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -3816,7 +3817,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/mahAbhAShyam/01_paspashAhnikam/01_shabda-svarUpa-nirNyaH/">०१ शब्दस्वरूपनिर्णयः </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -3841,7 +3842,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/mahAbhAShyam/01_paspashAhnikam/02_shabda-shAstra-prayojanam/">०२ शब्दशास्त्रप्रयोजनम् </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -3864,7 +3865,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/mahAbhAShyam/01_paspashAhnikam/03_nirmANa-rItiH/">०३ निर्माणरीतिः </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -3889,7 +3890,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/mahAbhAShyam/01_paspashAhnikam/04_jAti-vyakti-padArtha-nirNayaH/">०४ जातिव्यक्तिनिर्णयः </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -3914,7 +3915,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/mahAbhAShyam/01_paspashAhnikam/05_shabdanityatA/">०५ शब्दनित्यता </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -3939,7 +3940,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/mahAbhAShyam/01_paspashAhnikam/06_dharmajanakatA/">०६ धर्मजनकता </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -3964,7 +3965,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/mahAbhAShyam/01_paspashAhnikam/07_nityatA-paxa-nirNayaH/">०७ नित्यतापक्षनिर्णयः </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -3989,7 +3990,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/mahAbhAShyam/01_paspashAhnikam/08_dharma-niyamaH/">०८ धर्मनियमः </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -4014,7 +4015,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/mahAbhAShyam/01_paspashAhnikam/09_shabda-viSayaH/">०९ शब्द-विषयः </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -4039,7 +4040,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/mahAbhAShyam/01_paspashAhnikam/10_shabdajJNAna-dharmajanakatA/">१० शब्दज्ञान-धर्मजनकता </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -4064,7 +4065,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/mahAbhAShyam/01_paspashAhnikam/11_vyAkaraNam/">११ व्याकरणम् </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -4089,7 +4090,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/mahAbhAShyam/01_paspashAhnikam/12_varNopadeshaH/">१२ वर्णोपदेशः </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -4128,7 +4129,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/mahAbhAShyam/02_pratyAhArAhnikam/">०२ प्रत्याहाराह्निकम् </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -4176,7 +4177,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/vAkya-staram/">&#43;वाक्यस्तरम् </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -4204,7 +4205,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/vAkya-staram/kArakam/">कारकम् </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -4227,7 +4228,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/vAkya-staram/dviruktiH/">द्विरुक्तिः </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -4250,7 +4251,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/vAkya-staram/dhAtu-sakarmakatA/">धातु-सकर्मकता </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -4275,7 +4276,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/vAkya-staram/prayoga-bhedAH/">प्रयोगभेदाः </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -4300,7 +4301,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/vAkya-staram/prayoga-sAdhutA/">प्रयोगसाधुता </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -4325,7 +4326,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/vAkya-staram/vibhaktiH/">विभक्तिः </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -4362,7 +4363,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/saMjJNA/">&#43;संज्ञा </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -4390,7 +4391,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/saMjJNA/prakriyA-gatAH/">प्रक्रियागताः </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -4415,7 +4416,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/saMjJNA/varNAH/">वर्णाः </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -4440,7 +4441,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/saMjJNA/shabda-gatAH/">शब्दगताः </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -4479,7 +4480,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/sandhiH/">&#43;सन्धिः </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -4507,7 +4508,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/sandhiH/padAnte/">&#43;पदान्ते </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -4532,7 +4533,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/sandhiH/Natvam/">णत्वम् </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -4557,7 +4558,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/sandhiH/prakRtibhAvaH/">प्रकृतिभावः </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -4582,7 +4583,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/sandhiH/suT/">सुट् </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -4607,7 +4608,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/sandhiH/s-r/">स्-र् </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -4640,7 +4641,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/sandhiH/padAnte/">&#43;पदान्ते </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -4688,7 +4689,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/samAsaH/">&#43;समासः </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -4716,7 +4717,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/samAsaH/prakriyA/">&#43;प्रक्रिया </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -4741,7 +4742,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/samAsaH/avyayIbhAvaH/">अव्ययीभावः </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -4766,7 +4767,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/samAsaH/ekasheShaH/">एकशेषः </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -4791,7 +4792,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/samAsaH/tatpuruShaH/">तत्पुरुषः </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -4816,7 +4817,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/samAsaH/bahuvrIhiH/">बहुव्रीहिः </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -4849,7 +4850,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/samAsaH/prakriyA/">&#43;प्रक्रिया </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -4877,7 +4878,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/samAsaH/prakriyA/antya-pratyayaH/">अन्त्यप्रत्ययाः </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -4902,7 +4903,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/samAsaH/prakriyA/parapadasiddhiH/">परपदसिद्धिः </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -4927,7 +4928,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/samAsaH/prakriyA/pUrvapada-niyamAH/">पूर्वपद-नियमाः </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -4952,7 +4953,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/samAsaH/prakriyA/pUrvapada-nipAtanam/">पूर्वपदनिपातनम् </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -4977,7 +4978,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/samAsaH/prakriyA/lingavachane/">लिङ्गवचने </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -5022,7 +5023,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/paribhAShA/">परिभाषाः </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -5050,7 +5051,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/paribhAShA/sUtrAvagatiH/">सूत्रावगतिः </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -5089,7 +5090,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/prAtipadika-prakriyA/">प्रातिपदिक-प्रक्रिया </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -5117,7 +5118,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/prAtipadika-prakriyA/sup/">&#43;सुप् </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -5142,7 +5143,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/prAtipadika-prakriyA/it-saMjJNAH/">तद्दितप्रत्ययेषु&#43; इत्-संज्ञाः </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -5167,7 +5168,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/prAtipadika-prakriyA/strI/">स्त्रीः </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -5200,7 +5201,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/prAtipadika-prakriyA/sup/">&#43;सुप् </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -5228,7 +5229,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/prAtipadika-prakriyA/sup/rUpAvaliH/">सिद्धप्रत्ययाः </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -5253,7 +5254,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/prAtipadika-prakriyA/sup/siddha-pratyayAH/">सिद्धप्रत्ययाः </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -5278,7 +5279,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/prAtipadika-prakriyA/sup/subantam/">सुबन्तसिद्धिः </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -5323,7 +5324,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/mUlAni/">मूलानि </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -5351,7 +5352,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/pANinIyam/mUlAni/vishvAsa-prastutiH/">सूत्राणां विश्वासप्रस्तुतिः </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -5396,7 +5397,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/shabdabodhaH/">&#43;शाब्दबोधः </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -5424,7 +5425,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/shabdabodhaH/00-arthAMshAH/">&#43;०० अर्थांशाः </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -5449,7 +5450,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/shabdabodhaH/01-vAkya-bodhaH/">&#43;०१ वाक्य-बोधः </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -5474,7 +5475,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/shabdabodhaH/vAk-kramaH/">वाक्-क्रमः </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -5507,7 +5508,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/shabdabodhaH/00-arthAMshAH/">&#43;०० अर्थांशाः </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -5535,7 +5536,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/shabdabodhaH/00-arthAMshAH/vAkyArthAMshaH/">&#43;वाक्यार्थांशाः </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -5560,7 +5561,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/shabdabodhaH/00-arthAMshAH/abhidhA/">अभिधा </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -5585,7 +5586,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/shabdabodhaH/00-arthAMshAH/pada-vRttiH/">पदवृत्तिः </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -5610,7 +5611,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/shabdabodhaH/00-arthAMshAH/laxaNA/">लक्षणा </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -5635,7 +5636,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/shabdabodhaH/00-arthAMshAH/vyangyaH/">व्यङ्ग्यः </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -5666,7 +5667,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/shabdabodhaH/00-arthAMshAH/vAkyArthAMshaH/">&#43;वाक्यार्थांशाः </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -5694,7 +5695,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/shabdabodhaH/00-arthAMshAH/vAkyArthAMshaH/uddeshya-vidheya-bhAvaH/">उद्देश्य-विधेय-भावः </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -5719,7 +5720,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/shabdabodhaH/00-arthAMshAH/vAkyArthAMshaH/kRtiH/">कृतिः </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -5764,7 +5765,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/shabdabodhaH/01-vAkya-bodhaH/">&#43;०१ वाक्य-बोधः </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -5792,7 +5793,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/shabdabodhaH/01-vAkya-bodhaH/anvaya-kramaH/">अन्वय-क्रमः </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -5817,7 +5818,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/shabdabodhaH/01-vAkya-bodhaH/pada-ekavAkyatA/">एकवाक्यता </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -5842,7 +5843,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/shabdabodhaH/01-vAkya-bodhaH/vAykya-doShaH/">वाक्यदोषः </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -5867,7 +5868,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/shabdabodhaH/01-vAkya-bodhaH/vAkyabhedaH/">वाक्यभेदः </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -5892,7 +5893,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/shabdabodhaH/01-vAkya-bodhaH/vAkyabedha-prabandhaH/">वाक्यभेदप्रबन्धः </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -5946,7 +5947,7 @@
     <a class="btn btn-secondary" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a>
     <div class="btn small border">
       
-      <a href="https://github.com/vishvAsa/sanskrit/actions/workflows/build.yml"><img src="https://github.com/vishvAsa/sanskrit/actions/workflows/build.yml/badge.svg"> Built </a> on 2022 Feb 8 12:37:07 UTC. (<a href="http://google.com/search?q=12%3a37%3a07%20UTC to IST">IST</a>)
+      <a href="https://github.com/vishvAsa/sanskrit/actions/workflows/build.yml"><img src="https://github.com/vishvAsa/sanskrit/actions/workflows/build.yml/badge.svg"> Built </a> on 2022 Feb 8 16:04:08 UTC. (<a href="http://google.com/search?q=16%3a04%3a08%20UTC to IST">IST</a>)
     </div>
   <ul id="footer-bar-right-custom" class="list-group list-group-horizontal">
   </ul>

@@ -132,7 +132,7 @@
 
 
     
-<header class="p-1 bg-yellow">
+<header class="p-1 bg-yellow noPrint">
     <nav role="navigation">
       <div id="div_top_bar" class="row">
         <div class="col-md-3 justify-content-start">
@@ -142,7 +142,7 @@
         </div>
         <div id="div_top_bar_right" class="col-md-auto d-flex justify-content-center">
           ✍
-          <select name="transliterationDropdown" size="1" onchange="module_transliteration.updateTransliteration()">
+          <select id="transliterationDropdown" size="1" onchange="module_transliteration.updateTransliteration()">
             <optgroup label="🌍">
               <option value="iso">āISO</option>
               <option value="cyrillic">пу</option>
@@ -175,16 +175,17 @@
             </optgroup>
           </select>
           🗨:
-          <select name="commentStyleDropdown" size="1" onchange="module_main.default.updateCommentStyleFromDropdown()">
+          <select id="commentStyleDropdown" size="1" onchange="module_main.default.updateCommentStyleFromDropdown()">
             <option value="on">✔</option>
             <option value="hidden">✗</option>
           </select>
-          <div><a  name="speakerButton" class="btn btn-secondary" onclick="module_main.default.handleSpeakToggle()">🎧️</a></div>
+          <div><a id="printButton" class="btn btn-secondary" onclick="module_ui_lib.updatePrintLayout()">🖨️️</a></div>
+          <div><a id="speakerButton" class="btn btn-secondary" onclick="module_main.default.handleSpeakToggle()">🎧️</a></div>
         </div>
         <div class="row col  d-flex justify-content-center">
           <a href="/full_search"  class="btn btn-secondary">🥽🔦</a>
-          <div><a  name="previousPage" href="" class="btn btn-secondary">###<i class="fas fa-caret-left"></i></a></div>
-          <div ><a name="nextPage" href="" class="btn btn-secondary"><i class="fas fa-caret-right"></i> ### </a></div>
+          <div><a id="previousPage" href="" class="btn btn-secondary">###<i class="fas fa-caret-left"></i></a></div>
+          <div ><a id="nextPage" href="" class="btn btn-secondary"><i class="fas fa-caret-right"></i> ### </a></div>
         </div>
         <ul id="top-bar-right-custom" class="list-group list-group-horizontal">
         </ul>
@@ -195,7 +196,7 @@
     
     <div class="row" name="contentRow">
       
-      <aside class="col-md-3 card border " id="sidebar">
+      <aside class="col-md-3 card border noPrint " id="sidebar">
           <div id="fastSearch">
               <input id="searchInput" placeholder="शीर्षिकान्विष्यताम्"  tabindex="0">
           </div>
@@ -213,12 +214,12 @@
 <header class='border d-flex justify-content-between'>
     <h1 id="&#43;Goldman">&#43;Goldman</h1>
     
-    <a id="editLink" class="btn btn-primary"  href="https://github.com/vishvAsa/sanskrit/edit/content/vyAkaraNam/goldman/_index.md"><i class="fas fa-edit"></i></a>
+    <a id="editLink" class="btn btn-primary noPrint"  href="https://github.com/vishvAsa/sanskrit/edit/content/vyAkaraNam/goldman/_index.md"><i class="fas fa-edit"></i></a>
     
 </header>
 <main>
     <article>
-  <aside id="toc_card" class="card border ">
+  <aside id="toc_card" class="card border noPrint ">
     <div id="toc_header" class="card-title border d-flex justify-content-between">
         <a data-toggle="collapse" href="#toc_body" role="button" aria-expanded="true" aria-controls="toc_body">
           What's in this page? <i class="fas fa-caret-down"></i> </a>
@@ -246,7 +247,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/goldman/">&#43;Goldman </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -272,7 +273,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/goldman/00/">00 </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -297,7 +298,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/goldman/01_Phonology/">01 Phonology </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -322,7 +323,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/goldman/02_The_devanAgarI_Script/">02 The देवनागरी Script </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -347,7 +348,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/goldman/03_sandhi/">03 सन्धि </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -372,7 +373,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/goldman/04_Parts_of_Speech_and_the_Sanskrit_Sentence/">04 Parts of Speech and the Sanskrit Sentence </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -397,7 +398,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/goldman/05_strIlinga_Feminine_Nouns_in_A_chaturthI_panchamI_and_saptamI_vibhakti-s_Demonstrative_Pronouns/">05 स्त्रीलिङ्ग Feminine Nouns in आ ; चतुर्थी, पञ्चमी and सप्तमी विभक्ति-s; Demonstrative Pronouns </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -422,7 +423,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/goldman/06_Nominal_Stems_in_-i_and_-u_Interrogative_Relative_and_Correlative_Clauses_The_k-ya-t_Series_of_Indeclinables_and_Pronouns/">06 Nominal Stems in -इ and -उ; Interrogative, Relative, and Correlative Clauses: The क्-य-त् Series of Indeclinables and Pronouns </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -447,7 +448,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/goldman/07_strIlinga_Feminine_Stems_in_I_The_gaNa-s_of_the_Present_System/">07 स्त्रीलिङ्ग (Feminine) Stems in ई; The गण-s of the Present System </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -472,7 +473,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/goldman/08_Noun_Stem_Strength_Noun_Stems_in-an_anadyatanabhUte_la~N_The_Imperfect_upasarga-s_Upasarga-s/">08 Noun Stem Strength; Noun Stems in-अन्; अनद्यतनभूते लङ्, The Imperfect; उपसर्ग-s (Upasarga-s) </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -497,7 +498,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/goldman/09_Noun_Stems_in_aH_The_karmaNi_prayoga/">09 Noun Stems in अः; The कर्मणि प्रयोग </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -522,7 +523,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/goldman/10_Nominal_Stems_in_-_R_Verbal_Adjectives_bhUte_kRdantaH/">10 Nominal Stems in - ऋ; Verbal Adjectives; भूते कृदन्तः </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -547,7 +548,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/goldman/11_Stems_in_-anta_Adjectival_Suffixes_in-mant_and_-vantaH_The_ktavatu_Past_Active_Participle_The_tvAnta_lyabanta_Gerund_The_loT_Imperative/">11 Stems in -अन्त; Adjectival Suffixes in-मन्त् and -वन्तः The क्तवतु (Past Active Participle); The त्वान्त, ल्यबन्त (Gerund); The लोट् (Imperative) </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -572,7 +573,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/goldman/12_Nominal_Stems_in_in_samAsa_Nominal_Composition/">12 Nominal Stems in इन्; समास (Nominal Composition) </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -597,7 +598,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/goldman/13_tumananta_The_Infinitive_samAsa_Continued_bahuvrIhi_Application_of_karmadhAraya_and_tatpuruSha_samAsa-s_The_dvigu_samAsa/">13 तुमनन्त (The Infinitive); समास Continued; बहुव्रीहि Application of कर्मधारय and तत्पुरुष समास-s, The द्विगु समास </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -622,7 +623,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/goldman/14_samAsa_Concluded_The_dvandva_and_avyayIbhAva_samAsa-s_The_vidhi_li~N_Optative/">14 समास Concluded; The द्वन्द्व and अव्ययीभाव समास-s; The विधि लिङ् (Optative) </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -647,7 +648,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/goldman/15_vartamAne_kRdantaH_The_Present_Participle/">15 वर्तमाने कृदन्तः (The Present Participle) </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -672,7 +673,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/goldman/16_Non-gaNa_Conjugations_The_laT_la~N_and_luT_Future_System_and_the_Conditional_kRtya_Gerundive/">16 Non-गण Conjugations; The लट्, लङ्, and लुट् (Future System and the Conditional); कृत्य (Gerundive) </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -697,7 +698,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/goldman/17_paroxabhUte_liT_The_Perfect_The_Perfect_Participle/">17 परोक्षभूते लिट् (The Perfect); The Perfect Participle </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -722,7 +723,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/goldman/18_Nijanta_savanta_and_ya~Nanta_Secondary_Conjugations_nAmadhAtu_The_Denominative/">18 णिजन्त, सवन्त, and यङन्त Secondary Conjugations; नामधातु (The Denominative) </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -747,7 +748,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/goldman/19_sarvanAman_Additional_Pronouns_saMkhyA_-s_Numerals_adyatanabhUte_la~N_The_Aorist_Systems/">19 सर्वनामन् (Additional Pronouns); संख्या -s (Numerals); अद्यतनभूते लङ् (The Aorist Systems) </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -772,7 +773,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/goldman/20_kRt_and_taddhita-pratyayAH_chvi_Nominal_Derivation_and_Sanskrit_Vocabulary/">20 कृत् and तद्धित-प्रत्ययाः, च्वि, Nominal Derivation and Sanskrit Vocabulary </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -797,7 +798,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/goldman/21_Additional_Consonantal_Stem_Formations_Stems_with_Final_saMyukta_Vowels_Some_Irregular_Nominal_Declensions_Declension_of_the_Comparative_Suffix_yAMs_yaH_Some_Remarks_on_Adverbial_Formation/">21 Additional Consonantal Stem Formations; Stems with Final संयुक्त Vowels; Some Irregular Nominal Declensions; Declension of the Comparative Suffix यांस्, यः; Some Remarks on Adverbial Formation </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -822,7 +823,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/goldman/22_Readings_from_the_vAlmIki-rAmAyaNam/">22 Readings from the वाल्मीकि-रामायणम् </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -847,7 +848,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/sanskrit/vyAkaraNam/goldman/GLOSSARY/">GLOSSARY </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -889,7 +890,7 @@
     <a class="btn btn-secondary" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a>
     <div class="btn small border">
       
-      <a href="https://github.com/vishvAsa/sanskrit/actions/workflows/build.yml"><img src="https://github.com/vishvAsa/sanskrit/actions/workflows/build.yml/badge.svg"> Built </a> on 2022 Feb 8 12:37:07 UTC. (<a href="http://google.com/search?q=12%3a37%3a07%20UTC to IST">IST</a>)
+      <a href="https://github.com/vishvAsa/sanskrit/actions/workflows/build.yml"><img src="https://github.com/vishvAsa/sanskrit/actions/workflows/build.yml/badge.svg"> Built </a> on 2022 Feb 8 16:04:08 UTC. (<a href="http://google.com/search?q=16%3a04%3a08%20UTC to IST">IST</a>)
     </div>
   <ul id="footer-bar-right-custom" class="list-group list-group-horizontal">
   </ul>
