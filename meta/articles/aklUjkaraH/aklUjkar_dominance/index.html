@@ -209,14 +209,13 @@ History  Languages very close to Sanskrit was spoken by nearly ALL classes of pe
           <div id="fastSearch">
               <input id="searchInput" placeholder="शीर्षिकान्विष्यताम्"  tabindex="0">
           </div>
-          <div id="sidebarTitle" class="card-title bg-light-gray border d-flex justify-content-between" >
-          <a name="sidebarToggleLink" data-toggle="collapse" href="#sidebar_body" role="button" aria-expanded="true" aria-controls="sidebar_body" onclick="module_main.default.sidebarToggleHandler()">
-            Menu <i class="fas fa-caret-down"></i></a>
-        </div>
-        <nav class="card-body p-0 collapse show" id="sidebar_body">
-          <ul id="displayed_sidebar" class="list pl2 p-2 bg-yellow">
-        </ul>
-        </nav>
+          <details open  class="bg-light-gray" >
+              <summary id="sidebarToggleLink" onclick="module_main.default.sidebarToggleHandler()">
+            Menu
+              </summary>
+              <ul id="sidebarBody" class="list pl2 p-0 bg-yellow">
+              </ul>
+          </details>
       </aside>
       <main class="col p-3" role="main">
         
@@ -228,15 +227,14 @@ History  Languages very close to Sanskrit was spoken by nearly ALL classes of pe
 </header>
 <article>
   <aside id="toc_card" class="card border noPrint ">
-    <div id="toc_header" class="card-title border d-flex justify-content-between">
-        <a data-toggle="collapse" href="#toc_body" role="button" aria-expanded="true" aria-controls="toc_body">
-          What's in this page? <i class="fas fa-caret-down"></i> </a>
-    </div>
-    <div id="toc_body" class="card-body collapse p-0">
-      
-      <ul id="toc_ul" class="list p-0">
-      </ul>
-    </div>
+    <details id="toc_header">
+        <summary>What's in this page?</summary>
+      <div id="toc_body" class="p-0">
+        
+        <ul id="toc_ul" class="list p-0">
+        </ul>
+      </div>
+    </details>
   </aside>
   <div id="post_content">
   <p>&ldquo;Sanskrit as a supreme language&rdquo; by Ashok Aklujkar [<a href="https://archive.org/stream/paNDit-papers/AklujkarAEarlyHistorySktSuprem#page/n9/mode/2up">Arch</a>] is a very pertinent read. Some excerpts follow, with some added formatting. My notes are marked in bold like this: (<strong>VV: …</strong>). The most important section is the one titled: &ldquo;Emergence of dominance&rdquo;.</p>
@@ -491,7 +489,7 @@ Some of them are  subsumed by the elements I have noted. Others are applicable o
     <a class="btn btn-secondary" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a>
     <div class="btn small border">
       
-      <a href="https://github.com/vishvAsa/sanskrit/actions/workflows/build.yml"><img src="https://github.com/vishvAsa/sanskrit/actions/workflows/build.yml/badge.svg"> Built </a> on 2022 Feb 9 10:07:06 UTC. (<a href="http://google.com/search?q=10%3a07%3a06%20UTC to IST">IST</a>)
+      <a href="https://github.com/vishvAsa/sanskrit/actions/workflows/build.yml"><img src="https://github.com/vishvAsa/sanskrit/actions/workflows/build.yml/badge.svg"> Built </a> on 2022 Feb 13 17:33:32 UTC. (<a href="http://google.com/search?q=17%3a33%3a32%20UTC to IST">IST</a>)
     </div>
   <ul id="footer-bar-right-custom" class="list-group list-group-horizontal">
   </ul>
