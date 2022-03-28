@@ -31,7 +31,6 @@
       
     
 
-    <script src="/sanskrit/webpack_dist/dirTree-bundle.js"></script>
     <script type="text/javascript">
     
     let baseURL = "https:\/\/vishvAsa.github.io\/sanskrit\/";
@@ -60,12 +59,7 @@
 </script>
 
 
-    <script src="/sanskrit/webpack_dist/main-bundle.js"></script>
-<script src="/sanskrit/webpack_dist/transliteration-bundle.js"></script>
-<script src="/sanskrit/webpack_dist/uiLib-bundle.js"></script>
-<script src="/sanskrit/webpack_dist/search-bundle.js"></script>
-<script src="/sanskrit/webpack_dist/utils-bundle.js"></script>
-<script src="/sanskrit/webpack_dist/transliteration-bundle.js"></script>
+    <script src="/sanskrit/webpack_dist/uiLib-bundle.js"></script>
 
 
 
@@ -147,7 +141,7 @@
         </div>
         <div id="div_top_bar_right" class="col-md-auto d-flex justify-content-center">
           ✍
-          <select id="transliterationDropdown" size="1" onchange="module_transliteration.updateTransliteration()">
+          <select id="transliterationDropdown" size="1" onchange="module_uiLib.default.content.updateTransliteration()">
             <optgroup label="🌍">
               <option value="iso">āISO</option>
               <option value="cyrillic">пу</option>
@@ -180,15 +174,15 @@
             </optgroup>
           </select>
           🗨:
-          <select id="commentStyleDropdown" size="1" onchange="module_main.default.updateCommentStyleFromDropdown()">
+          <select id="commentStyleDropdown" size="1" onchange="module_uiLib.default.content.updateCommentStyleFromDropdown()">
             <option value="on">✔</option>
             <option value="hidden">✗</option>
           </select>
-          <div><a id="expandAllButton" class="btn btn-secondary" onclick="module_main.default.query.setParamAndGo('expandAll', 'true')">↕️️</a></div>
-          <div><a id="printButton" class="btn btn-secondary" onclick="module_main.default.query.setParamAndGo('printLayout', 'on')">🖨️️</a></div>
+          <div><a id="expandAllButton" class="btn btn-secondary" onclick="module_uiLib.default.query.setParamAndGo('expandAll', 'true')">↕️️</a></div>
+          <div><a id="printButton" class="btn btn-secondary" onclick="module_uiLib.default.query.setParamAndGo('printLayout', 'on')">🖨️️</a></div>
         </div>
         <div class="row col  d-flex justify-content-center">
-          <div><a id="speakerButton" class="btn btn-secondary" onclick="module_main.default.handleSpeakToggle()">🎧️</a></div>
+          <div><a id="speakerButton" class="btn btn-secondary" onclick="module_uiLib.default.content.handleSpeakToggle()">🎧️</a></div>
           <button id="speakerPauseButton" class="btn btn-secondary">⏸</button>
         </div>
         <div class="row col  d-flex justify-content-center">
@@ -226,10 +220,10 @@
       <aside class="col-md-3 card border noPrint " id="sidebar">
           <div id="fastSearch">
               <datalist id="pageDataList"></datalist>
-              <input id="searchInput" placeholder="शीर्षिकान्विष्यताम्" list="pageDataList" onchange="module_search.pageLoader()">
+              <input id="searchInput" placeholder="शीर्षिकान्विष्यताम्" list="pageDataList" onchange="module_uiLib.default.navigation.pageLoader()">
           </div>
           <details open  class="bg-light-gray" >
-              <summary id="sidebarToggleLink" onclick="module_main.default.sidebarToggleHandler()">
+              <summary id="sidebarToggleLink" onclick="module_uiLib.default.navigation.sidebarToggleHandler()">
             Menu
               </summary>
               <ul id="sidebarBody" class="list pl2 p-0 bg-yellow">
@@ -307,7 +301,181 @@
 
 <aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
-        <a href="https://vishvAsa.github.io/sanskrit/koshaH/niruktam/01/">०१ </a>
+        <a href="https://vishvAsa.github.io/sanskrit/koshaH/niruktam/laxmaNaH/">&#43;लक्ष्मणः </a>
+        <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
+    </div>
+    <nav id="section-tree-item-body-" class="card-body p-0 collapse">
+        
+        <li>draft: false</li>
+        
+        <li>iscjklanguage: false</li>
+        
+        <li>title: &#43;लक्ष्मणः</li>
+        
+        <li>unicode_script: devanagari</li>
+        
+    </nav>
+</aside>
+
+            
+            
+
+
+
+
+
+<aside class="card border noPrint" id="section-tree-item-">
+    <div class="card-title bg-light-gray border d-flex justify-content-between">
+        <a href="https://vishvAsa.github.io/sanskrit/koshaH/niruktam/sarva-prastutiH/">&#43;सर्व-प्रस्तुतिः </a>
+        <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
+    </div>
+    <nav id="section-tree-item-body-" class="card-body p-0 collapse">
+        
+        <li>draft: false</li>
+        
+        <li>iscjklanguage: false</li>
+        
+        <li>title: &#43;सर्व-प्रस्तुतिः</li>
+        
+        <li>unicode_script: devanagari</li>
+        
+    </nav>
+</aside>
+
+            
+            
+            
+            
+            <li>
+                
+<ul>
+    <li><input type="checkbox" id="section-tree-item-&#43;लक्ष्मणः" checked="checked" /><label for="section-tree-item-&#43;लक्ष्मणः">&#43;लक्ष्मणः</label>
+        <ul>
+            
+
+
+
+
+
+<aside class="card border noPrint" id="section-tree-item-">
+    <div class="card-title bg-light-gray border d-flex justify-content-between">
+        <a href="https://vishvAsa.github.io/sanskrit/koshaH/niruktam/laxmaNaH/">&#43;लक्ष्मणः </a>
+        <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
+    </div>
+    <nav id="section-tree-item-body-" class="card-body p-0 collapse">
+        
+        <li>draft: false</li>
+        
+        <li>iscjklanguage: false</li>
+        
+        <li>title: &#43;लक्ष्मणः</li>
+        
+        <li>unicode_script: devanagari</li>
+        
+    </nav>
+</aside>
+
+            
+            
+            
+            
+            
+
+
+
+
+
+<aside class="card border noPrint" id="section-tree-item-">
+    <div class="card-title bg-light-gray border d-flex justify-content-between">
+        <a href="https://vishvAsa.github.io/sanskrit/koshaH/niruktam/laxmaNaH/notes/">Notes </a>
+        <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
+    </div>
+    <nav id="section-tree-item-body-" class="card-body p-0 collapse">
+        
+        <li>draft: false</li>
+        
+        <li>iscjklanguage: false</li>
+        
+        <li>title: Notes</li>
+        
+    </nav>
+</aside>
+
+            
+            
+
+
+
+
+
+<aside class="card border noPrint" id="section-tree-item-">
+    <div class="card-title bg-light-gray border d-flex justify-content-between">
+        <a href="https://vishvAsa.github.io/sanskrit/koshaH/niruktam/laxmaNaH/translation/">Translation </a>
+        <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
+    </div>
+    <nav id="section-tree-item-body-" class="card-body p-0 collapse">
+        
+        <li>draft: false</li>
+        
+        <li>iscjklanguage: false</li>
+        
+        <li>title: Translation</li>
+        
+    </nav>
+</aside>
+
+            
+            
+            
+            
+        </ul>
+    </li>
+</ul>
+
+            </li>
+            
+            <li>
+                
+<ul>
+    <li><input type="checkbox" id="section-tree-item-&#43;सर्व-प्रस्तुतिः" checked="checked" /><label for="section-tree-item-&#43;सर्व-प्रस्तुतिः">&#43;सर्व-प्रस्तुतिः</label>
+        <ul>
+            
+
+
+
+
+
+<aside class="card border noPrint" id="section-tree-item-">
+    <div class="card-title bg-light-gray border d-flex justify-content-between">
+        <a href="https://vishvAsa.github.io/sanskrit/koshaH/niruktam/sarva-prastutiH/">&#43;सर्व-प्रस्तुतिः </a>
+        <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
+    </div>
+    <nav id="section-tree-item-body-" class="card-body p-0 collapse">
+        
+        <li>draft: false</li>
+        
+        <li>iscjklanguage: false</li>
+        
+        <li>title: &#43;सर्व-प्रस्तुतिः</li>
+        
+        <li>unicode_script: devanagari</li>
+        
+    </nav>
+</aside>
+
+            
+            
+            
+            
+            
+
+
+
+
+
+<aside class="card border noPrint" id="section-tree-item-">
+    <div class="card-title bg-light-gray border d-flex justify-content-between">
+        <a href="https://vishvAsa.github.io/sanskrit/koshaH/niruktam/sarva-prastutiH/01/">०१ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
     </div>
     <nav id="section-tree-item-body-" class="card-body p-0 collapse">
@@ -330,7 +498,7 @@
 
 <aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
-        <a href="https://vishvAsa.github.io/sanskrit/koshaH/niruktam/02/">०२ </a>
+        <a href="https://vishvAsa.github.io/sanskrit/koshaH/niruktam/sarva-prastutiH/02/">०२ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
     </div>
     <nav id="section-tree-item-body-" class="card-body p-0 collapse">
@@ -353,7 +521,7 @@
 
 <aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
-        <a href="https://vishvAsa.github.io/sanskrit/koshaH/niruktam/03/">०३ </a>
+        <a href="https://vishvAsa.github.io/sanskrit/koshaH/niruktam/sarva-prastutiH/03/">०३ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
     </div>
     <nav id="section-tree-item-body-" class="card-body p-0 collapse">
@@ -376,7 +544,7 @@
 
 <aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
-        <a href="https://vishvAsa.github.io/sanskrit/koshaH/niruktam/04/">०४ </a>
+        <a href="https://vishvAsa.github.io/sanskrit/koshaH/niruktam/sarva-prastutiH/04/">०४ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
     </div>
     <nav id="section-tree-item-body-" class="card-body p-0 collapse">
@@ -399,7 +567,7 @@
 
 <aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
-        <a href="https://vishvAsa.github.io/sanskrit/koshaH/niruktam/05/">०५ </a>
+        <a href="https://vishvAsa.github.io/sanskrit/koshaH/niruktam/sarva-prastutiH/05/">०५ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
     </div>
     <nav id="section-tree-item-body-" class="card-body p-0 collapse">
@@ -422,7 +590,7 @@
 
 <aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
-        <a href="https://vishvAsa.github.io/sanskrit/koshaH/niruktam/06/">०६ </a>
+        <a href="https://vishvAsa.github.io/sanskrit/koshaH/niruktam/sarva-prastutiH/06/">०६ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
     </div>
     <nav id="section-tree-item-body-" class="card-body p-0 collapse">
@@ -445,7 +613,7 @@
 
 <aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
-        <a href="https://vishvAsa.github.io/sanskrit/koshaH/niruktam/07/">०७ </a>
+        <a href="https://vishvAsa.github.io/sanskrit/koshaH/niruktam/sarva-prastutiH/07/">०७ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
     </div>
     <nav id="section-tree-item-body-" class="card-body p-0 collapse">
@@ -468,7 +636,7 @@
 
 <aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
-        <a href="https://vishvAsa.github.io/sanskrit/koshaH/niruktam/08/">०८ </a>
+        <a href="https://vishvAsa.github.io/sanskrit/koshaH/niruktam/sarva-prastutiH/08/">०८ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
     </div>
     <nav id="section-tree-item-body-" class="card-body p-0 collapse">
@@ -491,7 +659,7 @@
 
 <aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
-        <a href="https://vishvAsa.github.io/sanskrit/koshaH/niruktam/09/">०९ </a>
+        <a href="https://vishvAsa.github.io/sanskrit/koshaH/niruktam/sarva-prastutiH/09/">०९ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
     </div>
     <nav id="section-tree-item-body-" class="card-body p-0 collapse">
@@ -514,7 +682,7 @@
 
 <aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
-        <a href="https://vishvAsa.github.io/sanskrit/koshaH/niruktam/10/">१० </a>
+        <a href="https://vishvAsa.github.io/sanskrit/koshaH/niruktam/sarva-prastutiH/10/">१० </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
     </div>
     <nav id="section-tree-item-body-" class="card-body p-0 collapse">
@@ -537,7 +705,7 @@
 
 <aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
-        <a href="https://vishvAsa.github.io/sanskrit/koshaH/niruktam/11/">११ </a>
+        <a href="https://vishvAsa.github.io/sanskrit/koshaH/niruktam/sarva-prastutiH/11/">११ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
     </div>
     <nav id="section-tree-item-body-" class="card-body p-0 collapse">
@@ -560,7 +728,7 @@
 
 <aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
-        <a href="https://vishvAsa.github.io/sanskrit/koshaH/niruktam/12/">१२ </a>
+        <a href="https://vishvAsa.github.io/sanskrit/koshaH/niruktam/sarva-prastutiH/12/">१२ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
     </div>
     <nav id="section-tree-item-body-" class="card-body p-0 collapse">
@@ -583,7 +751,7 @@
 
 <aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
-        <a href="https://vishvAsa.github.io/sanskrit/koshaH/niruktam/13/">१३ </a>
+        <a href="https://vishvAsa.github.io/sanskrit/koshaH/niruktam/sarva-prastutiH/13/">१३ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
     </div>
     <nav id="section-tree-item-body-" class="card-body p-0 collapse">
@@ -600,6 +768,12 @@
             
             
             
+            
+        </ul>
+    </li>
+</ul>
+
+            </li>
             
         </ul>
     </li>
@@ -661,7 +835,7 @@
     <a class="btn btn-secondary" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a>
     <div class="btn small border">
       
-      <a href="https://github.com/vishvAsa/sanskrit/actions/workflows/build.yml"><img src="https://github.com/vishvAsa/sanskrit/actions/workflows/build.yml/badge.svg"> Built </a> on 2022 Mar 27 10:48:36 UTC. (<a href="http://google.com/search?q=10%3a48%3a36%20UTC to IST">IST</a>)
+      <a href="https://github.com/vishvAsa/sanskrit/actions/workflows/build.yml"><img src="https://github.com/vishvAsa/sanskrit/actions/workflows/build.yml/badge.svg"> Built </a> on 2022 Mar 28 12:54:11 UTC. (<a href="http://google.com/search?q=12%3a54%3a11%20UTC to IST">IST</a>)
     </div>
   <ul id="footer-bar-right-custom" class="list-group list-group-horizontal">
   </ul>
@@ -673,7 +847,7 @@
     
     
     
-    module_main.default.onDocumentReadyTasks();
+    module_uiLib.onDocumentReadyTasks();
   </script>
   
 </html>
